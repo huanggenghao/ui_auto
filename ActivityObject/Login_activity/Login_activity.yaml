@@ -5,14 +5,14 @@ parameters:
     desc: "请输入手机号"
     data: {
       method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("请输入手机号")'
+      value: 'new UiSelector().text("请输入手机号码")'
     }
 
-  - elem_name: "code"
-    desc: "请输入验证码"
+  - elem_name: "phone_passage"
+    desc: "请输入密码"
     data: {
       method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("请输入验证码")'
+      value: 'new UiSelector().text("请输入登陆密码")'
     }
 
   - elem_name: "login_btn"

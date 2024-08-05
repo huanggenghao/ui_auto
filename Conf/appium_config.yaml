@@ -3,10 +3,10 @@
   appium_start_cmd: "appium"
   remote_URL: "http://127.0.0.1:4723/wd/hub"
   platformName: "Android"
-  deviceName: "127.0.0.1:62001"
-  platformVersion: "5.1.1"
-  appPackage: "cn.com.smartfleet.app.admin"
-  appActivity: "cn.com.smartfleet.app.admin.MainActivity"
+  deviceName: "e362ce5e"
+  platformVersion: "8.0"
+  appPackage: "com.ugreen.iot"
+  appActivity: "com.ugreen.iot/com.guoxuansource.MainActivity"
   unicodeKeyboard: True
   resetKeyboard: True
 

@@ -22,17 +22,17 @@ class LoginActivity(Base):
         elem = self.elem_locator.get_locator("phone_number")
         super().send_key(elem, value)
 
-    def input_code(self, value):
-        elem = self.elem_locator.get_locator("code")
+    def input_passage(self, value):
+        elem = self.elem_locator.get_locator("phone_passage")
         super().send_key(elem, value)
+
+    def click_chenkbox_btn(self):
+        elem = self.elem_locator.get_locator("checkbox_btn")
+        super().click_btn(elem)
 
     def click_login_btn(self):
         elem = self.elem_locator.get_locator("login_btn")
         super().click_btn(elem)
-
-    def get_message_value(self):
-        elem = self.elem_locator.get_locator("message_id")
-        return super().get_text(elem)
 
 
 if __name__ == "__main__":

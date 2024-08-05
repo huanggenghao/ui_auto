@@ -1,6 +1,6 @@
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2024/8/12 21:11
+# @Time    : 2024/8/5 21:11
 # @Author  : huanggenghao
 # @Email   : 877649270@qq.com
 # @File    : run.py
@@ -49,10 +49,9 @@ def run_all_case(mobile_system):
     # 定义allure报告环境信息
     modify_report_environment_file(report_widgets_dir)
     # 打印url，方便直接访问
-    url = '报告链接：http://127.0.0.1:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1],
+    url = '报告链接：http://localhost:63342/{}/Report/{}/allure-results/index.html'.format(root_dir.split('/')[-1],
                                                                                       mobile_system.replace(" ", "_"))
     print(url)
-
 
 # 命令行参数调用
 def receive_cmd_arg():
