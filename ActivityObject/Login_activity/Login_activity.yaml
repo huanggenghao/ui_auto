@@ -4,15 +4,15 @@ parameters:
   - elem_name: "phone_number"
     desc: "请输入手机号"
     data: {
-      method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("请输入手机号码")'
+      method: "CLASS_NAME",
+      value: 'android.widget.EditText[0]'
     }
 
   - elem_name: "phone_passage"
     desc: "请输入密码"
     data: {
-      method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("请输入登陆密码")'
+      method: "CLASS_NAME",
+      value: 'android.widget.EditText[1]'
     }
 
   - elem_name: "login_btn"

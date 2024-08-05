@@ -35,5 +35,5 @@ class LoginActivity(Base):
         super().click_btn(elem)
 
 
-if __name__ == "__main__":
-    home_activity = LoginActivity(webdriver.Chrome())
+# if __name__ == "__main__":
+#     home_activity = LoginActivity(webdriver.Chrome())

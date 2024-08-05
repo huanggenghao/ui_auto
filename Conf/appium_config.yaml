@@ -3,10 +3,10 @@
   appium_start_cmd: "appium"
   remote_URL: "http://127.0.0.1:4723/wd/hub"
   platformName: "Android"
-  deviceName: "e362ce5e"
-  platformVersion: "8.0"
+  deviceName: "4fb5de03"
+  platformVersion: "10"
   appPackage: "com.ugreen.iot"
-  appActivity: "com.ugreen.iot/com.guoxuansource.MainActivity"
+  appActivity: "com.guoxuansource.MainActivity"
   unicodeKeyboard: True
   resetKeyboard: True
 
