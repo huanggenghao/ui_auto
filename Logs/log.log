@@ -1,0 +1,5 @@
+2024-08-06 10:24:20 INFO test_d1
+2024-08-06 10:24:20 INFO TestCases/Login/test_loginActivityCase.py::TestLoginPageCase::test_d1
+2024-08-06 10:24:21 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities":
+ {"firstMatch": [{"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true}]},
+ "desiredCapabilities": {"platformName": "Android", "deviceName": "4fb5de03", "platformVersion": "10", "appPackage": "com.ugreen.iot", "appActivity": "com.guoxuansource.MainActivity", "unicodeKeyboard": true, "resetKeyboard": true}}

@@ -6,7 +6,6 @@
 # @File    : run.py
 # @Software: PyCharm
 from Base.base import Base
-from selenium import webdriver
 from ActivityObject.elemParams import LoginActivityElem
 
 

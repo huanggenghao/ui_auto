@@ -11,10 +11,6 @@ graph TD
     登录页面对象-->base层
     注册页面testcase(注册页面testcase)-->|调用|注册页面对象
 	注册页面对象-->base层
-    购买页面testcase(购买页面testcase)-->|调用|购买页面对象
-	购买页面对象-->base层
-    client5(模块测试case)-->|调用|PageObject层
-    PageObject层-->|调用|base层((base层:基础方法))
     end
 ~~~
 
@@ -41,16 +37,9 @@ graph TD
 环境说明：
 
 - 开发工具：pycharm
-- python版本：python3.8
+- python版本：python3.11
 - 测试case总入口：run.py
-- 浏览器：Chrome
-- webdriver请选择对应Chrome版本的driver，并且放入python的安装目录中
 
----
-
-**有任何使用问题请联系我：848257135@qq.com**
-
----
 
 # 模块设计
 
@@ -140,28 +129,14 @@ graph TD
 
 ## python安装
 
-`version:3.7`
+`version:3.11`
 
 ## java环境配置
 
-`version 1.8`，win10系统中配置配置java环境，参考[win10java环境配置](https://www.runoob.com/w3cnote/windows10-java-setup.html)
-
 ## allure安装
-
-- 不同平台安装allure的方法不同，这里仅介绍windows平台下allure的安装步骤。其它平台请阅读[allure官方文档](https://docs.qameta.io/allure/)进行操作
-- 官方提供的安装方法可能会受网络环境影响而安装失败，可选择在[GitHub仓库](https://github.com/allure-framework/allure2 )下载文件并安装allure2
-- Windows环境下可以用以下步骤进行安装
-  - 安装scoop，使用**管理员权限**打开powershell窗口，输入命令`Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')`
-  - 如果安装不成功则运行`Set-ExecutionPolicy RemoteSigned -scope CurrentUser`，运行成功后重新执行第一步
-  - scoop安装成功后控制台会输出`Scoop was installed successfully!`
-  - 执行`scoop install allure`进行allure的安装
-  - allure安装成功后控制台会输出`'allure' (2.13.1) was installed successfully!`
 
 ## appium环境搭建
 
-参考资料：`https://download.csdn.net/download/qq_39214101/12721006`
-
-or进群下载：自动化测试-夜行者（816489363)
 
 # 如何编写测试用例
 
@@ -178,36 +153,36 @@ or进群下载：自动化测试-夜行者（816489363)
    - data：里面是一个字典，元素定位方式，以及元素定位方式的取值
 
    ```yaml
-   #封装需要操作的元素对象
-   desc: "登录页面元素操作对象"
-   parameters:
-     - elem_name: "phone_number"
-       desc: "请输入手机号"
-       data: {
-         method: "ANDROID_UIAUTOMATOR",
-         value: 'new UiSelector().text("请输入手机号")'
-       }
-   
-     - elem_name: "code"
-       desc: "请输入验证码"
-       data: {
-         method: "ANDROID_UIAUTOMATOR",
-         value: 'new UiSelector().text("请输入验证码")'
-       }
-   
-     - elem_name: "login_btn"
-       desc: "登录按钮"
-       data: {
-         method: "ANDROID_UIAUTOMATOR",
-         value: 'new UiSelector().text("登录")'
-       }
-   
-     - elem_name: "message_id"
-       desc: "消息弹框信息"
-       data: {
-         method: "ID",
-         value: "android:id/message"
-       }
+#封装需要操作的元素对象
+desc: "登录页面元素操作对象"
+parameters:
+  - elem_name: "phone_number"
+    desc: "请输入手机号"
+    data: {
+      method: "CLASS_NAME",
+      value: 'android.widget.EditText[0]'
+    }
+
+  - elem_name: "phone_passage"
+    desc: "请输入密码"
+    data: {
+      method: "CLASS_NAME",
+      value: 'android.widget.EditText[1]'
+    }
+
+  - elem_name: "login_btn"
+    desc: "登录按钮"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("登录")'
+    }
+
+  - elem_name: "message_id"
+    desc: "消息弹框信息"
+    data: {
+      method: "ID",
+      value: "android:id/message"
+    }
    ```
 
    
@@ -226,9 +201,9 @@ or进群下载：自动化测试-夜行者（816489363)
    ```python
    # !/user/bin/env python
    # -*- coding: utf-8 -*-
-   # @Time    : 2020/5/12 21:11
-   # @Author  : chineseluo
-   # @Email   : 848257135@qq.com
+   # @Time    : 2024/8/06 11:04
+   # @Author  : huanggenghao
+   # @Email   : 877649270@qq.com
    # @File    : run.py
    # @Software: PyCharm
    from Base.base import Base
@@ -236,33 +211,31 @@ or进群下载：自动化测试-夜行者（816489363)
    from ActivityObject.elemParams import LoginActivityElem
    
    
-   # 封装车联网app登录页面操作对象操作方法
-   class LoginActivity(Base):
-       def __init__(self, driver):
-           # 初始化页面元素对象，即yaml文件对象
-           self.elem_locator = LoginActivityElem()
-           # 初始化driver
-           super().__init__(driver)
-   
-       def input_phone(self, value):
-           elem = self.elem_locator.get_locator("phone_number")
-           super().send_key(elem, value)
-   
-       def input_code(self, value):
-           elem = self.elem_locator.get_locator("code")
-           super().send_key(elem, value)
-   
-       def click_login_btn(self):
-           elem = self.elem_locator.get_locator("login_btn")
-           super().click_btn(elem)
-   
-       def get_message_value(self):
-           elem = self.elem_locator.get_locator("message_id")
-           return super().get_text(elem)
-   
-   
-   if __name__ == "__main__":
-       home_activity = LoginActivity(webdriver.Chrome())
+ # 封装绿联app登录页面操作对象操作方法
+class LoginActivity(Base):
+    def __init__(self, driver):
+        # 初始化页面元素对象，即yaml文件对象
+        self.elem_locator = LoginActivityElem()
+        # 初始化driver
+        super().__init__(driver)
+
+    def input_phone(self, value):
+        elem = self.elem_locator.get_locator("phone_number")
+        super().send_key(elem, value)
+
+    def input_passage(self, value):
+        elem = self.elem_locator.get_locator("phone_passage")
+        super().send_key(elem, value)
+
+    def click_chenkbox_btn(self):
+        elem = self.elem_locator.get_locator("checkbox_btn")
+        super().click_btn(elem)
+
+    def click_login_btn(self):
+        elem = self.elem_locator.get_locator("login_btn")
+        super().click_btn(elem)
+
+
    
    ```
    
@@ -274,9 +247,9 @@ or进群下载：自动化测试-夜行者（816489363)
 
    ```python
    # -*- coding: utf-8 -*-
-   # @Time    : 2020/5/12 22:53
-   # @Author  : chineseluo
-   # @Email   : 848257135@qq.com
+   # @Time    : 2024/8/06 11:04
+   # @Author  : huanggenghao
+   # @Email   : 877649270@qq.com
    # @File    : conftest.py
    # @Software: PyCharm
    import pytest
@@ -294,9 +267,9 @@ or进群下载：自动化测试-夜行者（816489363)
    ```python
    # !/user/bin/env python
    # -*- coding: utf-8 -*-
-   # @Time    : 2020/5/12 21:11
-   # @Author  : chineseluo
-   # @Email   : 848257135@qq.com
+   # @Time    : 2024/8/06 11:04
+   # @Author  : huanggenghao
+   # @Email   : 877649270@qq.com
    # @File    : run.py
    # @Software: PyCharm
    import pytest
@@ -306,37 +279,24 @@ or进群下载：自动化测试-夜行者（816489363)
    from Base.assertMethod import AssertMethod
    
    
-   @allure.feature("TestLoginPageCase")
-   class TestLoginPageCase:
-   
-       @allure.story("Login")
-       @allure.severity("normal")
-       @allure.description("测试登录")
-       @allure.link("https://www.baidu.com", name="连接跳转百度")
-       @allure.testcase("https://www.sina.com", name="测试用例位置")
-       @allure.title("执行测试用例用于登录模块")
-       def test_d1(self, login_activity_class_load, function_driver):
-           logging.info("用例编号编码：{}".format(inspect.stack()[0][3]))
-           login_activity_class_load.input_phone("18383398524")
-           login_activity_class_load.input_code("123456")
-           login_activity_class_load.click_login_btn()
-           message_value = login_activity_class_load.get_message_value()
-           AssertMethod.assert_equal_screen_shot(function_driver, (message_value, "用户不存在"))
-   
-       @allure.story("Login")
-       @allure.severity("normal")
-       @allure.description("测试登录")
-       @allure.link("https://www.baidu.com", name="连接跳转百度")
-       @allure.testcase("https://www.sina.com", name="测试用例位置")
-       @allure.title("执行测试用例用于登录模块")
-       def test_d2(self, login_activity_class_load, function_driver):
-           logging.info("用例编号编码：{}".format(inspect.stack()[0][3]))
-           login_activity_class_load.input_phone("18383398524")
-           login_activity_class_load.input_code("123456")
-           login_activity_class_load.click_login_btn()
-           message_value = login_activity_class_load.get_message_value()
-           AssertMethod.assert_equal_screen_shot(function_driver, (message_value, "用户存在"))
-   
+ class TestLoginPageCase:
+
+    @allure.story("Login")
+    @allure.severity("normal")
+    @allure.description("测试登录")
+    @allure.testcase("https://zentao.ugreeniot.com/testcase-view-277-1.html", name="测试用例位置")
+    @allure.title("执行测试用例用于登录模块")
+    @allure.step("打开绿联app")
+    @allure.step("输入手机号码")
+    @allure.step("输入密码")
+    @allure.step("勾选已读，点击登陆按钮")
+    def test_d1(self, login_activity_class_load, function_driver):
+        logging.info("用例编号编码：{}".format(inspect.stack()[0][3]))
+        login_activity_class_load.input_phone("15992213991")
+        login_activity_class_load.input_passage("abcd123")
+        login_activity_class_load.click_chenkbox_btn()
+        login_activity_class_load.click_login_btn()
+        AssertMethod.assert_equal_screen_shot(function_driver, ('Success!', "密码错误"))
    
    if __name__ == "__main__":
        pytest.main(["test_loginActivityCase.py"])
