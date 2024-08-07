@@ -10,7 +10,7 @@ import time
 import os
 import logging
 from Common.publicMethod import PubMethod
-from appium.webdriver.extensions.search_context import AndroidSearchContext
+# from appium.webdriver.extensions.search_context import AndroidSearchContext
 
 
 def get_locator(activity_elem_class, elem_name):

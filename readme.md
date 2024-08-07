@@ -54,7 +54,7 @@ graph TD
 
 封装的读取配置文件的公共方法，类似于util工具类
 
-- publicMethod，封装公共方法，后面可能会讲一些方法分类创建不同的py模块进行管理，便于维护
+- publicMethod，封装公共方法，如截图
 - file_option.py，封装文件操作方法
 
 ## Conf模块

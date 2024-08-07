@@ -1,6 +1,7 @@
 ﻿appium_config:
   #配置appium启动参数
   appium_start_cmd: "appium"
+  automationName: 'appium'
   remote_URL: "http://127.0.0.1:4723/wd/hub"
   platformName: "Android"
   deviceName: "4fb5de03"

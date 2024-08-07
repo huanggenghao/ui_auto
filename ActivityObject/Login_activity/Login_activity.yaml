@@ -15,18 +15,18 @@ parameters:
       value: 'android.widget.EditText[1]'
     }
 
-  - elem_name: "login_btn"
-    desc: "登录按钮"
+  - elem_name: "checkbox_btn"
+    desc: "勾选已读选项"
     data: {
-      method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("登录")'
+      method: "CLASS_NAME",
+      value: 'android.widget.EditText[4]'
     }
 
-  - elem_name: "message_id"
-    desc: "消息弹框信息"
+  - elem_name: "login_btn"
+    desc: "点击登陆按钮"
     data: {
-      method: "ID",
-      value: "android:id/message"
+      method: "CLASS_NAME",
+      value: "android.view.ViewGroup[6]"
     }
 
 
