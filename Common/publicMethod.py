@@ -1,9 +1,9 @@
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2024/5/12 21:11
+# @Time    : 2024/8/8 11:32
 # @Author  : huanggenghao
 # @Email   : 877649270@qq.com
-# @File    : run.py
+# @File    : publicMethod.py
 # @Software: PyCharm
 import random
 import string

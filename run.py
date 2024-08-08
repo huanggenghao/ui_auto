@@ -29,7 +29,8 @@ def modify_report_environment_file(report_widgets_dir):
     ]
     # 确保目录存在
     PubMethod.create_dirs(os.path.join(report_widgets_dir, 'widgets'))
-    with open('./Report/allure-results/widgets/environment.json', 'w', encoding='utf-8') as f:
+
+    with open('./Report/android/allure-results/widgets/environment.json', 'w', encoding='utf-8') as f:
         json.dump(environment_info, f, ensure_ascii=False, indent=4)
 
 
@@ -37,7 +38,7 @@ def run_all_case(mobile_system):
     report_widgets_dir = os.path.abspath("./Report/allure-results")
     # 使用pytest.main
     pytest.main()
-    # 生成allure报告，需要系统执行命令--clean会清楚以前写入environment.json的配置
+    # 生成allure报告，需要系统执行命令--clean会清除以前写入environment.json的配置
     cmd = 'allure generate ./Report/{} -o ./Report/{}/allure-results --clean'.format(mobile_system.replace(" ", "_"),
                                                                                      mobile_system.replace(" ", "_"))
     logging.info("命令行执行cmd:{}".format(cmd))
