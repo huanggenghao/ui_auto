@@ -1,9 +1,9 @@
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2024/7/12 21:11
+# @Time    : 2024/8/6 11:23
 # @Author  : huanggenghao
 # @Email   : 877649270@qq.com
-# @File    : run.py
+# @File    : loginActivity.py
 # @Software: PyCharm
 from Base.base import Base
 from ActivityObject.elemParams import LoginActivityElem
@@ -32,6 +32,14 @@ class LoginActivity(Base):
     def click_login_btn(self):
         elem = self.elem_locator.get_locator("login_btn")
         super().click_btn(elem)
+
+    def login_btn_successs(self):
+        elem = self.elem_locator.get_locator("login_btn_successs")
+        super().click_btn(elem)
+
+    def add_devices(self):
+        elem = self.elem_locator.get_locator("add_devices")
+        return super().get_text(elem)
 
 
 # if __name__ == "__main__":

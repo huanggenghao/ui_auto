@@ -1,10 +1,12 @@
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2024/7/16 21:11
+# @Time    : 2024/8/7 10:33
 # @Author  : huanggenghao
 # @Email   : 877649270@qq.com
-# @File    : run.py
+# @File    : test_loginActivityCase.py
 # @Software: PyCharm
+import time
+
 import pytest
 import allure
 import inspect
@@ -26,11 +28,15 @@ class TestLoginPageCase:
     @allure.step("勾选已读，点击登陆按钮")
     def test_d1(self, login_activity_class_load, function_driver):
         logging.info("用例编号编码：{}".format(inspect.stack()[0][3]))
+        login_activity_class_load.login_btn_successs()
         login_activity_class_load.input_phone("15992213991")
-        login_activity_class_load.input_passage("abcd123")
+        login_activity_class_load.input_passage("abcd1234")
+        login_activity_class_load.click_login_btn()
         login_activity_class_load.click_chenkbox_btn()
         login_activity_class_load.click_login_btn()
-        AssertMethod.assert_equal_screen_shot(function_driver, ('Success!', "密码错误"))
+        time.sleep(2)
+        message_value = login_activity_class_load.add_devices()
+        AssertMethod.assert_equal_screen_shot(function_driver,(message_value,"添加设备"))
 
 
 

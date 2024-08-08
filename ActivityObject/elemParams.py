@@ -40,72 +40,108 @@ class ElemParams:
             logging.error("文件解析失败！{},文件路径：{}".format(e, file_path))
 
     def get_locator(self, elem_name):
-        """
+        elems_info = self.info
 
-        @param page_elem_class:传入页面元素对象
-        @param elem_name:传入自定义的元素名称
-        @return:
-        """
-        page_obj_elem = self.info
-        elems_info = page_obj_elem
         for item in elems_info:
             if item["elem_name"] == elem_name:
                 method = item["data"]["method"]
                 value = item["data"]["value"]
                 logging.info("元素名称为：{}，元素定位方式为：{}，元素对象值为：{}".format(elem_name, method, value))
-                if method == "ID" and value is not None:
-                    elem_locator = (By.ID, value)
-                    return elem_locator
-                elif method == "XPATH" and value is not None:
-                    elem_locator = (By.XPATH, value)
-                    return elem_locator
-                elif method == "LINK_TEXT" and value is not None:
-                    elem_locator = (By.LINK_TEXT, value)
-                    return elem_locator
-                elif method == "PARTIAL_LINK_TEXT" and value is not None:
-                    elem_locator = (By.PARTIAL_LINK_TEXT, value)
-                    return elem_locator
-                elif method == "NAME" and value is not None:
-                    elem_locator = (By.NAME, value)
-                    return elem_locator
-                elif method == "TAG_NAME" and value is not None:
-                    elem_locator = (By.TAG_NAME, value)
-                    return elem_locator
-                elif method == "CLASS_NAME" and value is not None:
-                    elem_locator = (By.CLASS_NAME, value)
-                    return elem_locator
-                elif method == "CSS_SELECTOR" and value is not None:
-                    elem_locator = (By.CSS_SELECTOR, value)
-                    return elem_locator
-                elif method == "IOS_UIAUTOMATION" and value is not None:
-                    elem_locator = (BaseBy.IOS_UIAUTOMATION, value)
-                    return elem_locator
-                elif method == "IOS_PREDICATE" and value is not None:
-                    elem_locator = (BaseBy.IOS_PREDICATE, value)
-                    return elem_locator
-                elif method == "IOS_CLASS_CHAIN" and value is not None:
-                    elem_locator = (BaseBy.IOS_CLASS_CHAIN, value)
-                    return elem_locator
-                elif method == "ANDROID_UIAUTOMATOR" and value is not None:
-                    elem_locator = (BaseBy.ANDROID_UIAUTOMATOR, value)
-                    return elem_locator
-                elif method == "ANDROID_VIEWTAG" and value is not None:
-                    elem_locator = (BaseBy.ANDROID_VIEWTAG, value)
-                    return elem_locator
-                elif method == "WINDOWS_UI_AUTOMATION" and value is not None:
-                    elem_locator = (BaseBy.WINDOWS_UI_AUTOMATION, value)
-                    return elem_locator
-                elif method == "ACCESSIBILITY_ID" and value is not None:
-                    elem_locator = (BaseBy.ACCESSIBILITY_ID, value)
-                    return elem_locator
-                elif method == "IMAGE" and value is not None:
-                    elem_locator = (BaseBy.IMAGE, value)
-                    return elem_locator
-                elif method == "CUSTOM" and value is not None:
-                    elem_locator = (BaseBy.CUSTOM, value)
-                    return elem_locator
+
+                locator_dict = {
+                    "ID": By.ID,
+                    "XPATH": By.XPATH,
+                    "LINK_TEXT": By.LINK_TEXT,
+                    "PARTIAL_LINK_TEXT": By.PARTIAL_LINK_TEXT,
+                    "NAME": By.NAME,
+                    "TAG_NAME": By.TAG_NAME,
+                    "CLASS_NAME": By.CLASS_NAME,
+                    "CSS_SELECTOR": By.CSS_SELECTOR,
+                    "IOS_UIAUTOMATION": BaseBy.IOS_UIAUTOMATION,
+                    "IOS_PREDICATE": BaseBy.IOS_PREDICATE,
+                    "IOS_CLASS_CHAIN": BaseBy.IOS_CLASS_CHAIN,
+                    "ANDROID_UIAUTOMATOR": BaseBy.ANDROID_UIAUTOMATOR,
+                    "ANDROID_VIEWTAG": BaseBy.ANDROID_VIEWTAG,
+                    "WINDOWS_UI_AUTOMATION": BaseBy.WINDOWS_UI_AUTOMATION,
+                    "ACCESSIBILITY_ID": BaseBy.ACCESSIBILITY_ID,
+                    "IMAGE": BaseBy.IMAGE,
+                    "CUSTOM": BaseBy.CUSTOM
+                }
+
+                if method in locator_dict and value is not None:
+                    return (locator_dict[method], value)
                 else:
                     logging.error("元素名称：{}，此元素定位方式异常，定位元素值异常，请检查！！！".format(elem_name))
+                    return None
+
+
+    # def get_locator(self, elem_name):
+    #     """
+    #
+    #     @param page_elem_class:传入页面元素对象
+    #     @param elem_name:传入自定义的元素名称
+    #     @return:
+    #     """
+    #     page_obj_elem = self.info
+    #     elems_info = page_obj_elem
+    #     for item in elems_info:
+    #         if item["elem_name"] == elem_name:
+    #             method = item["data"]["method"]
+    #             value = item["data"]["value"]
+    #             logging.info("元素名称为：{}，元素定位方式为：{}，元素对象值为：{}".format(elem_name, method, value))
+    #             if method == "ID" and value is not None:
+    #                 elem_locator = (By.ID, value)
+    #                 return elem_locator
+    #             elif method == "XPATH" and value is not None:
+    #                 elem_locator = (By.XPATH, value)
+    #                 return elem_locator
+    #             elif method == "LINK_TEXT" and value is not None:
+    #                 elem_locator = (By.LINK_TEXT, value)
+    #                 return elem_locator
+    #             elif method == "PARTIAL_LINK_TEXT" and value is not None:
+    #                 elem_locator = (By.PARTIAL_LINK_TEXT, value)
+    #                 return elem_locator
+    #             elif method == "NAME" and value is not None:
+    #                 elem_locator = (By.NAME, value)
+    #                 return elem_locator
+    #             elif method == "TAG_NAME" and value is not None:
+    #                 elem_locator = (By.TAG_NAME, value)
+    #                 return elem_locator
+    #             elif method == "CLASS_NAME" and value is not None:
+    #                 elem_locator = (By.CLASS_NAME, value)
+    #                 return elem_locator
+    #             elif method == "CSS_SELECTOR" and value is not None:
+    #                 elem_locator = (By.CSS_SELECTOR, value)
+    #                 return elem_locator
+    #             elif method == "IOS_UIAUTOMATION" and value is not None:
+    #                 elem_locator = (BaseBy.IOS_UIAUTOMATION, value)
+    #                 return elem_locator
+    #             elif method == "IOS_PREDICATE" and value is not None:
+    #                 elem_locator = (BaseBy.IOS_PREDICATE, value)
+    #                 return elem_locator
+    #             elif method == "IOS_CLASS_CHAIN" and value is not None:
+    #                 elem_locator = (BaseBy.IOS_CLASS_CHAIN, value)
+    #                 return elem_locator
+    #             elif method == "ANDROID_UIAUTOMATOR" and value is not None:
+    #                 elem_locator = (BaseBy.ANDROID_UIAUTOMATOR, value)
+    #                 return elem_locator
+    #             elif method == "ANDROID_VIEWTAG" and value is not None:
+    #                 elem_locator = (BaseBy.ANDROID_VIEWTAG, value)
+    #                 return elem_locator
+    #             elif method == "WINDOWS_UI_AUTOMATION" and value is not None:
+    #                 elem_locator = (BaseBy.WINDOWS_UI_AUTOMATION, value)
+    #                 return elem_locator
+    #             elif method == "ACCESSIBILITY_ID" and value is not None:
+    #                 elem_locator = (BaseBy.ACCESSIBILITY_ID, value)
+    #                 return elem_locator
+    #             elif method == "IMAGE" and value is not None:
+    #                 elem_locator = (BaseBy.IMAGE, value)
+    #                 return elem_locator
+    #             elif method == "CUSTOM" and value is not None:
+    #                 elem_locator = (BaseBy.CUSTOM, value)
+    #                 return elem_locator
+    #             else:
+    #                 logging.error("元素名称：{}，此元素定位方式异常，定位元素值异常，请检查！！！".format(elem_name))
 
 
 # 注册yaml文件对象

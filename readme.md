@@ -167,20 +167,20 @@ parameters:
     desc: "请输入密码"
     data: {
       method: "CLASS_NAME",
-      value: 'android.widget.EditText[1]'
+      value: 'new UiSelector().text("登录")'
     }
 
   - elem_name: "login_btn"
     desc: "登录按钮"
     data: {
-      method: "ANDROID_UIAUTOMATOR",
+      method: "CLASS_NAME",
       value: 'new UiSelector().text("登录")'
     }
 
-  - elem_name: "message_id"
-    desc: "消息弹框信息"
+  - elem_name: "check_btn"
+    desc: "勾选弹框"
     data: {
-      method: "ID",
+      method: "CLASS_NAME",
       value: "android:id/message"
     }
    ```

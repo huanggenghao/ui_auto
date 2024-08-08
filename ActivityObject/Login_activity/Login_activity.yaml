@@ -2,31 +2,45 @@
 desc: "登录页面元素操作对象"
 parameters:
   - elem_name: "phone_number"
-    desc: "请输入手机号"
+    desc: "请输入手机号码"
     data: {
-      method: "CLASS_NAME",
-      value: 'android.widget.EditText[0]'
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("请输入手机号码")'
     }
 
   - elem_name: "phone_passage"
-    desc: "请输入密码"
+    desc: "请输入登陆密码"
     data: {
-      method: "CLASS_NAME",
-      value: 'android.widget.EditText[1]'
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().textMatches("^请输入登.*")'
     }
 
   - elem_name: "checkbox_btn"
     desc: "勾选已读选项"
     data: {
-      method: "CLASS_NAME",
-      value: 'android.widget.EditText[4]'
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("同意")'
     }
 
   - elem_name: "login_btn"
-    desc: "点击登陆按钮"
+    desc: "登陆"
     data: {
-      method: "CLASS_NAME",
-      value: "android.view.ViewGroup[6]"
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().textMatches("登录")'
     }
+
+  - elem_name: "login_btn_successs"
+    desc: "同意并继续"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("同意并继续")'
+    }
+
+  - elem_name: "add_devices"
+    desc: "添加设备"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("添加设备")'
+        }
 
 

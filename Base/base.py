@@ -1,4 +1,11 @@
 # coding:utf-8
+# !/user/bin/env python
+# -*- coding: utf-8 -*-
+# @Time    : 2024/8/7 10:33
+# @Author  : huanggenghao
+# @Email   : 877649270@qq.com
+# @File    : run.py
+# @Software: PyCharm
 from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
