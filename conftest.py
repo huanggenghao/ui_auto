@@ -50,7 +50,7 @@ def function_driver(request):
         logging.error(f"Failed to create WebDriver instance: {e}")
         raise
     yield driver
-    driver.quit()
+    # driver.quit()
     # driver = webdriver.Remote(command_executor=appium_config["remote_URL"], desired_capabilities=desired_caps)
     # yield driver
     # logging.info("driver.quit:清理driver进程！！！")

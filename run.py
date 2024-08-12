@@ -1,18 +1,23 @@
 # !/user/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2024/8/5 21:11
+# @Time    : 2024/8/8 15:56
 # @Author  : huanggenghao
 # @Email   : 877649270@qq.com
 # @File    : run.py
 # @Software: PyCharm
 import os
+import smtplib
 import sys
 import json
 import logging
+
 import pytest
 from Common.publicMethod import PubMethod
 
 root_dir = os.path.dirname(__file__)
+
+cur_path = os.path.dirname(os.path.realpath(__file__))
+
 config_yaml = PubMethod.read_yaml("./Conf/config.yaml")
 
 
@@ -25,13 +30,14 @@ def modify_report_environment_file(report_widgets_dir):
         {"name": '测试地址', "values": [config_yaml['allure_environment']['URL']]},
         {"name": '测试版本号', "values": [config_yaml['allure_environment']["version"]]},
         {"name": '测试账户', "values": [config_yaml['allure_environment']['username']]},
-        {"name": '测试说明', "values": [config_yaml['allure_environment']['description']]}
+        {"name": '测试说明', "values": [config_yaml['allure_environment']['description']]},
+        { "name": '作者', "values": [config_yaml['allure_environment']['author']]}
     ]
     # 确保目录存在
     PubMethod.create_dirs(os.path.join(report_widgets_dir, 'widgets'))
 
     with open('./Report/android/allure-results/widgets/environment.json', 'w', encoding='utf-8') as f:
-        json.dump(environment_info, f, ensure_ascii=False, indent=4)
+        json.dump(environment_info, f, ensure_ascii=False, indent=5)
 
 
 def run_all_case(mobile_system):
@@ -54,6 +60,7 @@ def run_all_case(mobile_system):
                                                                                       mobile_system.replace(" ", "_"))
     print(url)
 
+
 # 命令行参数调用
 def receive_cmd_arg():
     global root_dir
@@ -72,3 +79,4 @@ def receive_cmd_arg():
 
 if __name__ == "__main__":
     receive_cmd_arg()
+

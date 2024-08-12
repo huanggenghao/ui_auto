@@ -3,3 +3,4 @@ allure_environment:
   description: test description
   username: 15992213991
   version: V1.0.10
+  author: huanggenghao
