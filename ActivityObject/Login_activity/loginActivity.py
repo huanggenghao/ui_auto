@@ -42,5 +42,4 @@ class LoginActivity(Base):
         return super().get_text(elem)
 
 
-# if __name__ == "__main__":
-#     home_activity = LoginActivity(webdriver.Chrome())
+

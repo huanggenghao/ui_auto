@@ -17,6 +17,7 @@ import time
 import os
 import logging
 from Common.publicMethod import PubMethod
+
 # from appium.webdriver.extensions.search_context import AndroidSearchContext
 
 

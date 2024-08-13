@@ -8,6 +8,8 @@ import os
 import pytest
 import logging
 from appium import webdriver
+
+from ActivityObject.Login_activity.loginActivity import LoginActivity
 from Common.publicMethod import PubMethod
 
 appium_config_path = os.path.join(os.path.dirname(__file__), "Conf", "appium_config.yaml")
@@ -50,12 +52,21 @@ def function_driver(request):
         logging.error(f"Failed to create WebDriver instance: {e}")
         raise
     yield driver
-    # driver.quit()
-    # driver = webdriver.Remote(command_executor=appium_config["remote_URL"], desired_capabilities=desired_caps)
-    # yield driver
-    # logging.info("driver.quit:清理driver进程！！！")
-    # driver.quit()
 
+
+@pytest.fixture(scope="function")
+def login_activity_class_load(function_driver):
+    login_activity = LoginActivity(function_driver)
+
+    # 执行登录操作
+    login_activity.login_btn_successs()
+    login_activity.input_phone("15992213991")
+    login_activity.input_passage("abcd1234")
+    login_activity.click_login_btn()
+    login_activity.click_chenkbox_btn()  # 勾选复选框
+    login_activity.click_login_btn()     # 点击登录按钮
+
+    yield login_activity
 
 if __name__ == '__main__':
     print(appium_config["remote_URL"])

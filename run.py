@@ -6,7 +6,6 @@
 # @File    : run.py
 # @Software: PyCharm
 import os
-import smtplib
 import sys
 import json
 import logging
@@ -35,8 +34,13 @@ def modify_report_environment_file(report_widgets_dir):
     ]
     # 确保目录存在
     PubMethod.create_dirs(os.path.join(report_widgets_dir, 'widgets'))
+    # 获取environment。json路径
+    cur_path = os.path.dirname(os.path.realpath(__file__))
+    AndroidPath = os.path.join(cur_path,'Report/android/allure-results/widgets/environment.json')
+    print(AndroidPath)
 
-    with open('./Report/android/allure-results/widgets/environment.json', 'w', encoding='utf-8') as f:
+
+    with open(AndroidPath, 'w', encoding='utf-8') as f:
         json.dump(environment_info, f, ensure_ascii=False, indent=5)
 
 

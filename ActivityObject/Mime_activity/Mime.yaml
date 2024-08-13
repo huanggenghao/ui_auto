@@ -1,0 +1,37 @@
+#封装需要操作的元素对象
+desc: "登录我的页面元素操作对象"
+parameters:
+  - elem_name: "mine_btn"
+    desc: "我的"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("我的")'
+    }
+
+  - elem_name: "insert_page"
+    desc: "进入我的界面箭头"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("1")'
+    }
+
+  - elem_name: "tuichu_btn"
+    desc: "退出登录"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("退出登录")'
+    }
+
+  - elem_name: "sure_tuichu_btn"
+    desc: "退出登录"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("确定")'
+    }
+
+  - elem_name: "login_btn"
+    desc: "登陆"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().textMatches("登录")'
+    }
