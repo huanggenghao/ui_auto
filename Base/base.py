@@ -198,6 +198,24 @@ class Base:
         except Exception as e:
             return False
 
+    def get_radio_button_status(self, locator):
+        """
+        获取单选按钮或开关的状态。
+
+        @param locator: 定位器
+        @return: 返回True表示选中或打开，False表示未选中或关闭
+        """
+        elem = self.find_element(locator)
+        try:
+            status = elem.get_attribute("clickable")
+            # 有些开关可能返回 "true"/"false"，而不是布尔值，所以我们确保转换为布尔值
+            is_checked = status.lower() == "true"
+            logging.info("该元素对象获取状态成功，状态值为：{}".format(is_checked))
+        except Exception as e:
+            logging.error("该元素对象获取状态失败，错误信息为：{}".format(e))
+            return False  # 发生错误时默认返回False
+        return is_checked
+
 
 if __name__ == "__main__":
     pass

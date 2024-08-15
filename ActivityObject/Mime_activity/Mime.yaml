@@ -57,3 +57,47 @@ parameters:
       method: "ANDROID_UIAUTOMATOR",
       value: 'new UiSelector().text("确认")'
     }
+
+  - elem_name: "about_btn"
+    desc: "点击关于按钮"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("关于")'
+    }
+
+  - elem_name: "version_btn"
+    desc: "点击app版本"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("V1.1.0")'
+    }
+
+  - elem_name: "update_notice"
+    desc: "检测是否有升级框"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("应用更新")'
+    }
+
+  - elem_name: "information_set"
+    desc: "消息设置"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("消息设置")'
+    }
+
+
+  - elem_name: "get_devicesinformation"
+    desc: "点击设备推送按钮"
+    data: {
+      method: "XPATH",
+      value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup'
+    }
+
+  - elem_name: "devices_door"
+    desc: "获取设备推送开关状态"
+    data: {
+      method: "XPATH",
+      value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup'
+    }
+
