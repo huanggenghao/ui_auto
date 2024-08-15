@@ -9,12 +9,6 @@
 from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support import expected_conditions as EC
-import time
-import os
 import logging
 from Common.publicMethod import PubMethod
 

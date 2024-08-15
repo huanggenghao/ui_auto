@@ -37,3 +37,18 @@ class MimeActivity(Base):
     def get_login_name(self):
         elem = self.elem_locator.get_locator("login_btn")
         return super().get_text(elem)
+
+    def personal_btn(self):
+        elem = self.elem_locator.get_locator("personal_btn")
+        super().click_btn(elem)
+
+
+    def reset_agree(self):
+        elem = self.elem_locator.get_locator("reset_agree")
+        super().click_btn(elem)
+
+
+    def reset_agree_btn(self):
+        elem = self.elem_locator.get_locator("reset_agree_btn")
+        super().click_btn(elem)
+

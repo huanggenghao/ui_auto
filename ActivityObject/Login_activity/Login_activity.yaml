@@ -41,6 +41,24 @@ parameters:
     data: {
       method: "ANDROID_UIAUTOMATOR",
       value: 'new UiSelector().text("添加设备")'
-        }
+    }
+
+
+  - elem_name: "get_toash"
+    desc: "获取toash消息"
+    data: {
+      method: "XPATH",
+      value: '//*[@text= "密码错误"]'
+    }
+
+  - elem_name: "check_btn"
+    desc: "获取单选按钮"
+    data: {
+      method: "XPATH",
+      value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView
+'
+    }
+
+
 
 

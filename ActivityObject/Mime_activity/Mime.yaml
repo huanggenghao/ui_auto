@@ -23,7 +23,7 @@ parameters:
     }
 
   - elem_name: "sure_tuichu_btn"
-    desc: "退出登录"
+    desc: "确认退出"
     data: {
       method: "ANDROID_UIAUTOMATOR",
       value: 'new UiSelector().text("确定")'
@@ -34,4 +34,26 @@ parameters:
     data: {
       method: "ANDROID_UIAUTOMATOR",
       value: 'new UiSelector().textMatches("登录")'
+    }
+
+  - elem_name: "personal_btn"
+    desc: "点击个人信息保护界面"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("个人信息保护")'
+    }
+
+
+  - elem_name: "reset_agree"
+    desc: "点击个人信息保护界面"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("撤回同意")'
+    }
+
+  - elem_name: "reset_agree_btn"
+    desc: "点击个人信息保护界面"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("确认")'
     }

@@ -1,269 +1,656 @@
-2024-08-13 17:56:20 INFO test_d1
-2024-08-13 17:56:20 INFO TestCases/Login/test_loginActivityCase.py::TestLoginPageCase::test_d1
-2024-08-13 17:56:20 INFO test_d2
-2024-08-13 17:56:20 INFO TestCases/Mime/test_MimeActivityCase.py::TestMimeCase::test_d2
-2024-08-13 17:56:20 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True}
-2024-08-13 17:56:20 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true}}}
-2024-08-13 17:56:20 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
-2024-08-13 17:56:29 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 927
-2024-08-13 17:56:29 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"3a71108e-d0d5-455e-81b3-6fc5bbe73ba2"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '927', 'ETag': 'W/"39f-4ErPJLxgAL6RUWhp24QtTFeUv9I"', 'Date': 'Tue, 13 Aug 2024 09:56:29 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:29 DEBUG Finished Request
-2024-08-13 17:56:29 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
-2024-08-13 17:56:29 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
-2024-08-13 17:56:29 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
-2024-08-13 17:56:29 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:29 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 404 454
-2024-08-13 17:56:29 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Tue, 13 Aug 2024 09:56:29 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:29 DEBUG Finished Request
-2024-08-13 17:56:30 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:30 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 404 454
-2024-08-13 17:56:30 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Tue, 13 Aug 2024 09:56:30 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:30 DEBUG Finished Request
-2024-08-13 17:56:30 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:31 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:31 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"20f16b27-19a0-4c18-ada4-62cf5d5c755a","ELEMENT":"20f16b27-19a0-4c18-ada4-62cf5d5c755a"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-CVcoHgpivhhBj7e+0gPgTBo99/s"', 'Date': 'Tue, 13 Aug 2024 09:56:31 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:31 DEBUG Finished Request
-2024-08-13 17:56:31 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="20f16b27-19a0-4c18-ada4-62cf5d5c755a")>
-2024-08-13 17:56:31 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/20f16b27-19a0-4c18-ada4-62cf5d5c755a/click {"id": "20f16b27-19a0-4c18-ada4-62cf5d5c755a"}
-2024-08-13 17:56:34 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/20f16b27-19a0-4c18-ada4-62cf5d5c755a/click HTTP/1.1" 200 14
-2024-08-13 17:56:34 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:34 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:34 DEBUG Finished Request
-2024-08-13 17:56:34 INFO 元素对象点击成功
-2024-08-13 17:56:34 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
-2024-08-13 17:56:34 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
-2024-08-13 17:56:34 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
-2024-08-13 17:56:34 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
-2024-08-13 17:56:34 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:34 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"8f32505f-a2d3-434d-8972-b351b62d93bb","ELEMENT":"8f32505f-a2d3-434d-8972-b351b62d93bb"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-ojioufflEhNqC2fiQufm0XTBAQ0"', 'Date': 'Tue, 13 Aug 2024 09:56:34 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:34 DEBUG Finished Request
-2024-08-13 17:56:34 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="8f32505f-a2d3-434d-8972-b351b62d93bb")>
-2024-08-13 17:56:34 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/8f32505f-a2d3-434d-8972-b351b62d93bb/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "8f32505f-a2d3-434d-8972-b351b62d93bb"}
-2024-08-13 17:56:34 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/8f32505f-a2d3-434d-8972-b351b62d93bb/value HTTP/1.1" 200 14
-2024-08-13 17:56:34 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:34 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:34 DEBUG Finished Request
-2024-08-13 17:56:34 INFO 元素对象输入值成功，值为：15992213991
-2024-08-13 17:56:34 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
-2024-08-13 17:56:34 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
-2024-08-13 17:56:34 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
-2024-08-13 17:56:34 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
-2024-08-13 17:56:35 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:35 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"a3756c24-bd1a-4742-8498-bd4f93b583ae","ELEMENT":"a3756c24-bd1a-4742-8498-bd4f93b583ae"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-WZ9fFZg5SmxIqoWK0jATFIJArMc"', 'Date': 'Tue, 13 Aug 2024 09:56:35 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:35 DEBUG Finished Request
-2024-08-13 17:56:35 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="a3756c24-bd1a-4742-8498-bd4f93b583ae")>
-2024-08-13 17:56:35 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/a3756c24-bd1a-4742-8498-bd4f93b583ae/value {"text": "abcd1234", "value": ["a", "b", "c", "d", "1", "2", "3", "4"], "id": "a3756c24-bd1a-4742-8498-bd4f93b583ae"}
-2024-08-13 17:56:36 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/a3756c24-bd1a-4742-8498-bd4f93b583ae/value HTTP/1.1" 200 14
-2024-08-13 17:56:36 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:36 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:36 DEBUG Finished Request
-2024-08-13 17:56:36 INFO 元素对象输入值成功，值为：abcd1234
-2024-08-13 17:56:36 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
-2024-08-13 17:56:36 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
-2024-08-13 17:56:36 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
-2024-08-13 17:56:36 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
-2024-08-13 17:56:37 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:37 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"214577e6-1db3-44b3-8c4f-6b9ba8424873","ELEMENT":"214577e6-1db3-44b3-8c4f-6b9ba8424873"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-TeFWQLp28BOx+Ji+4r2hNlxLQjs"', 'Date': 'Tue, 13 Aug 2024 09:56:37 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:37 DEBUG Finished Request
-2024-08-13 17:56:37 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="214577e6-1db3-44b3-8c4f-6b9ba8424873")>
-2024-08-13 17:56:37 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/214577e6-1db3-44b3-8c4f-6b9ba8424873/click {"id": "214577e6-1db3-44b3-8c4f-6b9ba8424873"}
-2024-08-13 17:56:38 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/214577e6-1db3-44b3-8c4f-6b9ba8424873/click HTTP/1.1" 200 14
-2024-08-13 17:56:38 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:38 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:38 DEBUG Finished Request
-2024-08-13 17:56:38 INFO 元素对象点击成功
-2024-08-13 17:56:38 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
-2024-08-13 17:56:38 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
-2024-08-13 17:56:38 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
-2024-08-13 17:56:38 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
-2024-08-13 17:56:38 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:38 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"46435110-304c-429f-9fef-68c1d31eac72","ELEMENT":"46435110-304c-429f-9fef-68c1d31eac72"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-qssSuXdCDunBqDWFbxJkT7YsOII"', 'Date': 'Tue, 13 Aug 2024 09:56:38 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:38 DEBUG Finished Request
-2024-08-13 17:56:38 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="46435110-304c-429f-9fef-68c1d31eac72")>
-2024-08-13 17:56:38 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/46435110-304c-429f-9fef-68c1d31eac72/click {"id": "46435110-304c-429f-9fef-68c1d31eac72"}
-2024-08-13 17:56:40 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/46435110-304c-429f-9fef-68c1d31eac72/click HTTP/1.1" 200 14
-2024-08-13 17:56:40 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:40 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:40 DEBUG Finished Request
-2024-08-13 17:56:40 INFO 元素对象点击成功
-2024-08-13 17:56:40 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
-2024-08-13 17:56:40 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
-2024-08-13 17:56:40 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
-2024-08-13 17:56:40 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
-2024-08-13 17:56:40 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:40 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"03880e2a-4dda-41e4-a229-fe9d84df8fd9","ELEMENT":"03880e2a-4dda-41e4-a229-fe9d84df8fd9"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-Fq1uQ+557E5LcCfjsirJ1SSSpCM"', 'Date': 'Tue, 13 Aug 2024 09:56:40 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:40 DEBUG Finished Request
-2024-08-13 17:56:40 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="03880e2a-4dda-41e4-a229-fe9d84df8fd9")>
-2024-08-13 17:56:40 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/03880e2a-4dda-41e4-a229-fe9d84df8fd9/click {"id": "03880e2a-4dda-41e4-a229-fe9d84df8fd9"}
-2024-08-13 17:56:42 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/03880e2a-4dda-41e4-a229-fe9d84df8fd9/click HTTP/1.1" 200 14
-2024-08-13 17:56:42 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:42 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:42 DEBUG Finished Request
-2024-08-13 17:56:42 INFO 元素对象点击成功
-2024-08-13 17:56:42 INFO 元素名称为：add_devices，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("添加设备")
-2024-08-13 17:56:42 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("添加设备")')
-2024-08-13 17:56:42 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("添加设备")
-2024-08-13 17:56:42 DEBUG POST http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6dfb\u52a0\u8bbe\u5907\")"}
-2024-08-13 17:56:42 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element HTTP/1.1" 200 137
-2024-08-13 17:56:42 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"632597f3-e80b-4448-883a-c4e02ddcee61","ELEMENT":"632597f3-e80b-4448-883a-c4e02ddcee61"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-vMI4Kw7zzHwOzU51Q9vnSb1KEZk"', 'Date': 'Tue, 13 Aug 2024 09:56:42 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:42 DEBUG Finished Request
-2024-08-13 17:56:42 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="3a71108e-d0d5-455e-81b3-6fc5bbe73ba2", element="632597f3-e80b-4448-883a-c4e02ddcee61")>
-2024-08-13 17:56:42 DEBUG GET http://127.0.0.1:4723/wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/632597f3-e80b-4448-883a-c4e02ddcee61/text {"id": "632597f3-e80b-4448-883a-c4e02ddcee61"}
-2024-08-13 17:56:43 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/3a71108e-d0d5-455e-81b3-6fc5bbe73ba2/element/632597f3-e80b-4448-883a-c4e02ddcee61/text HTTP/1.1" 200 75
-2024-08-13 17:56:43 DEBUG Remote response: status=200 | data={"sessionId":"3a71108e-d0d5-455e-81b3-6fc5bbe73ba2","value":"添加设备"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '75', 'ETag': 'W/"4b-sU6zjyJNEcIVE+j6Cjv2qrhhI4A"', 'Date': 'Tue, 13 Aug 2024 09:56:43 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:43 DEBUG Finished Request
-2024-08-13 17:56:43 INFO 元素text值：添加设备
-2024-08-13 17:56:43 INFO 正在进行元素断言：断言方式:添加设备是否等于添加设备
-2024-08-13 17:56:43 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True}
-2024-08-13 17:56:43 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true}}}
-2024-08-13 17:56:43 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
-2024-08-13 17:56:52 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 927
-2024-08-13 17:56:52 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"d327c410-531c-49a7-9f4b-674b09ec5517"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '927', 'ETag': 'W/"39f-lS15NRzacIFPuYdjOzqNJFVg8KM"', 'Date': 'Tue, 13 Aug 2024 09:56:52 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:52 DEBUG Finished Request
-2024-08-13 17:56:52 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
-2024-08-13 17:56:52 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
-2024-08-13 17:56:52 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
-2024-08-13 17:56:52 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:53 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 404 454
-2024-08-13 17:56:53 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Tue, 13 Aug 2024 09:56:53 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:53 DEBUG Finished Request
-2024-08-13 17:56:54 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:54 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 404 454
-2024-08-13 17:56:54 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Tue, 13 Aug 2024 09:56:54 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:54 DEBUG Finished Request
-2024-08-13 17:56:54 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
-2024-08-13 17:56:55 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:56:55 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"c6d4788f-1f4c-467c-9965-15a117c0a256","ELEMENT":"c6d4788f-1f4c-467c-9965-15a117c0a256"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-zc0KlCV5p4MZCS6oIfMQyQWBVUE"', 'Date': 'Tue, 13 Aug 2024 09:56:55 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:55 DEBUG Finished Request
-2024-08-13 17:56:55 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="c6d4788f-1f4c-467c-9965-15a117c0a256")>
-2024-08-13 17:56:55 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/c6d4788f-1f4c-467c-9965-15a117c0a256/click {"id": "c6d4788f-1f4c-467c-9965-15a117c0a256"}
-2024-08-13 17:56:57 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/c6d4788f-1f4c-467c-9965-15a117c0a256/click HTTP/1.1" 200 14
-2024-08-13 17:56:57 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:57 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:57 DEBUG Finished Request
-2024-08-13 17:56:57 INFO 元素对象点击成功
-2024-08-13 17:56:57 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
-2024-08-13 17:56:57 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
-2024-08-13 17:56:57 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
-2024-08-13 17:56:57 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
-2024-08-13 17:56:57 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:56:57 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"aecbb3de-dc0c-460a-9339-a6e66645647d","ELEMENT":"aecbb3de-dc0c-460a-9339-a6e66645647d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-pivbH7Mfm/C6gA/yy37quEJYkvA"', 'Date': 'Tue, 13 Aug 2024 09:56:57 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:57 DEBUG Finished Request
-2024-08-13 17:56:57 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="aecbb3de-dc0c-460a-9339-a6e66645647d")>
-2024-08-13 17:56:57 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/aecbb3de-dc0c-460a-9339-a6e66645647d/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "aecbb3de-dc0c-460a-9339-a6e66645647d"}
-2024-08-13 17:56:58 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/aecbb3de-dc0c-460a-9339-a6e66645647d/value HTTP/1.1" 200 14
-2024-08-13 17:56:58 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:58 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:58 DEBUG Finished Request
-2024-08-13 17:56:58 INFO 元素对象输入值成功，值为：15992213991
-2024-08-13 17:56:58 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
-2024-08-13 17:56:58 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
-2024-08-13 17:56:58 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
-2024-08-13 17:56:58 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
-2024-08-13 17:56:59 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:56:59 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"820fd3cb-99a2-400f-b12c-226ac6648022","ELEMENT":"820fd3cb-99a2-400f-b12c-226ac6648022"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-B5o2m3CXRR6uC4VZXLbZsrrqeh4"', 'Date': 'Tue, 13 Aug 2024 09:56:59 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:59 DEBUG Finished Request
-2024-08-13 17:56:59 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="820fd3cb-99a2-400f-b12c-226ac6648022")>
-2024-08-13 17:56:59 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/820fd3cb-99a2-400f-b12c-226ac6648022/value {"text": "abcd1234", "value": ["a", "b", "c", "d", "1", "2", "3", "4"], "id": "820fd3cb-99a2-400f-b12c-226ac6648022"}
-2024-08-13 17:56:59 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/820fd3cb-99a2-400f-b12c-226ac6648022/value HTTP/1.1" 200 14
-2024-08-13 17:56:59 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:56:59 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:56:59 DEBUG Finished Request
-2024-08-13 17:56:59 INFO 元素对象输入值成功，值为：abcd1234
-2024-08-13 17:56:59 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
-2024-08-13 17:56:59 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
-2024-08-13 17:56:59 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
-2024-08-13 17:56:59 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
-2024-08-13 17:57:00 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:00 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"7204b515-b10b-4b37-8724-0271c8ff2e2f","ELEMENT":"7204b515-b10b-4b37-8724-0271c8ff2e2f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-yt96nBfVjYeey6YftuaS7g4g4XU"', 'Date': 'Tue, 13 Aug 2024 09:57:00 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:00 DEBUG Finished Request
-2024-08-13 17:57:00 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="7204b515-b10b-4b37-8724-0271c8ff2e2f")>
-2024-08-13 17:57:00 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/7204b515-b10b-4b37-8724-0271c8ff2e2f/click {"id": "7204b515-b10b-4b37-8724-0271c8ff2e2f"}
-2024-08-13 17:57:01 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/7204b515-b10b-4b37-8724-0271c8ff2e2f/click HTTP/1.1" 200 14
-2024-08-13 17:57:01 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:01 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:01 DEBUG Finished Request
-2024-08-13 17:57:01 INFO 元素对象点击成功
-2024-08-13 17:57:01 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
-2024-08-13 17:57:01 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
-2024-08-13 17:57:01 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
-2024-08-13 17:57:01 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
-2024-08-13 17:57:01 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:01 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2b948848-9861-4306-9817-5b7ee68aeb70","ELEMENT":"2b948848-9861-4306-9817-5b7ee68aeb70"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-aTcwsoWq0QCsrdLWfm0ZHkP2nI4"', 'Date': 'Tue, 13 Aug 2024 09:57:01 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:01 DEBUG Finished Request
-2024-08-13 17:57:01 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="2b948848-9861-4306-9817-5b7ee68aeb70")>
-2024-08-13 17:57:01 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/2b948848-9861-4306-9817-5b7ee68aeb70/click {"id": "2b948848-9861-4306-9817-5b7ee68aeb70"}
-2024-08-13 17:57:03 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/2b948848-9861-4306-9817-5b7ee68aeb70/click HTTP/1.1" 200 14
-2024-08-13 17:57:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:03 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:03 DEBUG Finished Request
-2024-08-13 17:57:03 INFO 元素对象点击成功
-2024-08-13 17:57:03 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
-2024-08-13 17:57:03 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
-2024-08-13 17:57:03 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
-2024-08-13 17:57:03 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
-2024-08-13 17:57:03 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:03 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"86562ca6-b72e-4cf4-8e59-418f86fe3587","ELEMENT":"86562ca6-b72e-4cf4-8e59-418f86fe3587"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-L32Jt7+sZgcYGiRWU6T/jPJwbjU"', 'Date': 'Tue, 13 Aug 2024 09:57:03 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:03 DEBUG Finished Request
-2024-08-13 17:57:03 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="86562ca6-b72e-4cf4-8e59-418f86fe3587")>
-2024-08-13 17:57:03 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/86562ca6-b72e-4cf4-8e59-418f86fe3587/click {"id": "86562ca6-b72e-4cf4-8e59-418f86fe3587"}
-2024-08-13 17:57:06 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/86562ca6-b72e-4cf4-8e59-418f86fe3587/click HTTP/1.1" 200 14
-2024-08-13 17:57:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:06 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:06 DEBUG Finished Request
-2024-08-13 17:57:06 INFO 元素对象点击成功
-2024-08-13 17:57:06 INFO 用例编号编码：test_d2
-2024-08-13 17:57:06 INFO 元素名称为：mine_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("我的")
-2024-08-13 17:57:06 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("我的")')
-2024-08-13 17:57:06 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("我的")
-2024-08-13 17:57:06 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6211\u7684\")"}
-2024-08-13 17:57:06 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:06 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2ca4fcae-0216-4183-a298-2b9cfeda2911","ELEMENT":"2ca4fcae-0216-4183-a298-2b9cfeda2911"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-YUTRTg46uvVhUDqVfcugtSiO8+I"', 'Date': 'Tue, 13 Aug 2024 09:57:06 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:06 DEBUG Finished Request
-2024-08-13 17:57:06 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="2ca4fcae-0216-4183-a298-2b9cfeda2911")>
-2024-08-13 17:57:06 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/2ca4fcae-0216-4183-a298-2b9cfeda2911/click {"id": "2ca4fcae-0216-4183-a298-2b9cfeda2911"}
-2024-08-13 17:57:08 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/2ca4fcae-0216-4183-a298-2b9cfeda2911/click HTTP/1.1" 200 14
-2024-08-13 17:57:08 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:08 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:08 DEBUG Finished Request
-2024-08-13 17:57:08 INFO 元素对象点击成功
-2024-08-13 17:57:08 INFO 元素名称为：insert_page，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("1")
-2024-08-13 17:57:08 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("1")')
-2024-08-13 17:57:08 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("1")
-2024-08-13 17:57:08 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"1\")"}
-2024-08-13 17:57:08 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:08 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6f496911-76a5-4183-8e06-40ee0604ecc5","ELEMENT":"6f496911-76a5-4183-8e06-40ee0604ecc5"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-dKcCUoquUiyu+qI/096bjLbsQVw"', 'Date': 'Tue, 13 Aug 2024 09:57:08 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:08 DEBUG Finished Request
-2024-08-13 17:57:08 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="6f496911-76a5-4183-8e06-40ee0604ecc5")>
-2024-08-13 17:57:08 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/6f496911-76a5-4183-8e06-40ee0604ecc5/click {"id": "6f496911-76a5-4183-8e06-40ee0604ecc5"}
-2024-08-13 17:57:09 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/6f496911-76a5-4183-8e06-40ee0604ecc5/click HTTP/1.1" 200 14
-2024-08-13 17:57:09 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:09 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:09 DEBUG Finished Request
-2024-08-13 17:57:09 INFO 元素对象点击成功
-2024-08-13 17:57:09 INFO 元素名称为：tuichu_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("退出登录")
-2024-08-13 17:57:09 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("退出登录")')
-2024-08-13 17:57:09 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("退出登录")
-2024-08-13 17:57:09 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u9000\u51fa\u767b\u5f55\")"}
-2024-08-13 17:57:09 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:09 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"83577679-4e62-4253-a8b7-0e50044fe507","ELEMENT":"83577679-4e62-4253-a8b7-0e50044fe507"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-XTRrm2ffChrhKkerWDfnuh1iiUs"', 'Date': 'Tue, 13 Aug 2024 09:57:09 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:09 DEBUG Finished Request
-2024-08-13 17:57:09 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="83577679-4e62-4253-a8b7-0e50044fe507")>
-2024-08-13 17:57:09 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/83577679-4e62-4253-a8b7-0e50044fe507/click {"id": "83577679-4e62-4253-a8b7-0e50044fe507"}
-2024-08-13 17:57:10 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/83577679-4e62-4253-a8b7-0e50044fe507/click HTTP/1.1" 200 14
-2024-08-13 17:57:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:10 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:10 DEBUG Finished Request
-2024-08-13 17:57:10 INFO 元素对象点击成功
-2024-08-13 17:57:10 INFO 元素名称为：sure_tuichu_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("确定")
-2024-08-13 17:57:10 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("确定")')
-2024-08-13 17:57:10 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("确定")
-2024-08-13 17:57:10 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u786e\u5b9a\")"}
-2024-08-13 17:57:11 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:11 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f3107fb1-1aa9-41fa-81f8-3b04129d3ade","ELEMENT":"f3107fb1-1aa9-41fa-81f8-3b04129d3ade"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-pEDl2NOV9Vu/z/spe++8ygJecxw"', 'Date': 'Tue, 13 Aug 2024 09:57:11 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:11 DEBUG Finished Request
-2024-08-13 17:57:11 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="f3107fb1-1aa9-41fa-81f8-3b04129d3ade")>
-2024-08-13 17:57:11 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/f3107fb1-1aa9-41fa-81f8-3b04129d3ade/click {"id": "f3107fb1-1aa9-41fa-81f8-3b04129d3ade"}
-2024-08-13 17:57:12 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/f3107fb1-1aa9-41fa-81f8-3b04129d3ade/click HTTP/1.1" 200 14
-2024-08-13 17:57:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Tue, 13 Aug 2024 09:57:12 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:12 DEBUG Finished Request
-2024-08-13 17:57:12 INFO 元素对象点击成功
-2024-08-13 17:57:14 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
-2024-08-13 17:57:14 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
-2024-08-13 17:57:14 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
-2024-08-13 17:57:14 DEBUG POST http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
-2024-08-13 17:57:14 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element HTTP/1.1" 200 137
-2024-08-13 17:57:14 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc","ELEMENT":"7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-gGrw0n5Kq2Y8+LUJg3IvEA+EnlY"', 'Date': 'Tue, 13 Aug 2024 09:57:14 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:14 DEBUG Finished Request
-2024-08-13 17:57:14 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="d327c410-531c-49a7-9f4b-674b09ec5517", element="7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc")>
-2024-08-13 17:57:14 DEBUG GET http://127.0.0.1:4723/wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc/text {"id": "7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc"}
-2024-08-13 17:57:14 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/d327c410-531c-49a7-9f4b-674b09ec5517/element/7e2814cc-ebe9-4932-83f4-1ffc8bf78ffc/text HTTP/1.1" 200 69
-2024-08-13 17:57:14 DEBUG Remote response: status=200 | data={"sessionId":"d327c410-531c-49a7-9f4b-674b09ec5517","value":"登录"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '69', 'ETag': 'W/"45-brQbkzi/85os9J6CW63xLjjvciA"', 'Date': 'Tue, 13 Aug 2024 09:57:14 GMT', 'Connection': 'keep-alive'})
-2024-08-13 17:57:14 DEBUG Finished Request
-2024-08-13 17:57:14 INFO 元素text值：登录
-2024-08-13 17:57:14 INFO 正在进行元素断言：断言方式:登录是否等于登录
+2024-08-15 14:21:44 INFO test_d1
+2024-08-15 14:21:44 INFO TestCases/Login/test_loginActivityCase.py::TestLoginPageCase::test_d1
+2024-08-15 14:21:44 INFO test_d2
+2024-08-15 14:21:44 INFO TestCases/Login/test_loginActivityCase.py::TestLoginPageCase::test_d2
+2024-08-15 14:21:44 INFO test_d3
+2024-08-15 14:21:44 INFO TestCases/Login/test_loginActivityCase.py::TestLoginPageCase::test_d3
+2024-08-15 14:21:44 INFO test_d4
+2024-08-15 14:21:44 INFO TestCases/Mime/test_MimeActivityCase.py::TestMimeCase::test_d4
+2024-08-15 14:21:44 INFO test_d5
+2024-08-15 14:21:44 INFO TestCases/Mime/test_MimeActivityCase.py::TestMimeCase::test_d5
+2024-08-15 14:21:44 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'newCommandTimeout': 300}
+2024-08-15 14:21:44 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true, "appium:newCommandTimeout": 300}}}
+2024-08-15 14:21:44 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
+2024-08-15 14:21:59 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 975
+2024-08-15 14:21:59 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"33a7603b-69ee-4fc2-bcf0-75cfd56a1c36"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '975', 'ETag': 'W/"3cf-ysxuR01Yd2WBJ/JXmDTHf/5oLzE"', 'Date': 'Thu, 15 Aug 2024 06:21:59 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:21:59 DEBUG Finished Request
+2024-08-15 14:21:59 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
+2024-08-15 14:21:59 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
+2024-08-15 14:21:59 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
+2024-08-15 14:21:59 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:00 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 404 454
+2024-08-15 14:22:00 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:00 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:00 DEBUG Finished Request
+2024-08-15 14:22:00 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:01 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 404 454
+2024-08-15 14:22:01 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:01 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:01 DEBUG Finished Request
+2024-08-15 14:22:01 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:02 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:02 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"677d56f1-1fc1-44d6-94fe-5078f73fa51a","ELEMENT":"677d56f1-1fc1-44d6-94fe-5078f73fa51a"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-87EiBZhtRFG/MZCH6J6J/cYK51M"', 'Date': 'Thu, 15 Aug 2024 06:22:02 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:02 DEBUG Finished Request
+2024-08-15 14:22:02 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="677d56f1-1fc1-44d6-94fe-5078f73fa51a")>
+2024-08-15 14:22:02 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/677d56f1-1fc1-44d6-94fe-5078f73fa51a/click {"id": "677d56f1-1fc1-44d6-94fe-5078f73fa51a"}
+2024-08-15 14:22:03 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/677d56f1-1fc1-44d6-94fe-5078f73fa51a/click HTTP/1.1" 200 14
+2024-08-15 14:22:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:03 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:03 DEBUG Finished Request
+2024-08-15 14:22:03 INFO 元素对象点击成功
+2024-08-15 14:22:03 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:03 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
+2024-08-15 14:22:03 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:03 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
+2024-08-15 14:22:03 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:03 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"7f0378be-0a71-474d-bada-45e3a253c4f3","ELEMENT":"7f0378be-0a71-474d-bada-45e3a253c4f3"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-b5wUjxcKwT/KlU1J1D1qywIvByo"', 'Date': 'Thu, 15 Aug 2024 06:22:03 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:03 DEBUG Finished Request
+2024-08-15 14:22:03 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="7f0378be-0a71-474d-bada-45e3a253c4f3")>
+2024-08-15 14:22:03 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/7f0378be-0a71-474d-bada-45e3a253c4f3/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "7f0378be-0a71-474d-bada-45e3a253c4f3"}
+2024-08-15 14:22:04 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/7f0378be-0a71-474d-bada-45e3a253c4f3/value HTTP/1.1" 200 14
+2024-08-15 14:22:04 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:04 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:04 DEBUG Finished Request
+2024-08-15 14:22:04 INFO 元素对象输入值成功，值为：15992213991
+2024-08-15 14:22:04 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:04 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
+2024-08-15 14:22:04 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:04 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
+2024-08-15 14:22:05 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:05 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"5a682d5c-8075-464e-b5d4-b00229c85198","ELEMENT":"5a682d5c-8075-464e-b5d4-b00229c85198"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-BwZgYfVKG4G4xQucNm3y1++bqWQ"', 'Date': 'Thu, 15 Aug 2024 06:22:05 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:05 DEBUG Finished Request
+2024-08-15 14:22:05 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="5a682d5c-8075-464e-b5d4-b00229c85198")>
+2024-08-15 14:22:05 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/5a682d5c-8075-464e-b5d4-b00229c85198/value {"text": "abcd1234", "value": ["a", "b", "c", "d", "1", "2", "3", "4"], "id": "5a682d5c-8075-464e-b5d4-b00229c85198"}
+2024-08-15 14:22:06 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/5a682d5c-8075-464e-b5d4-b00229c85198/value HTTP/1.1" 200 14
+2024-08-15 14:22:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:06 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:06 DEBUG Finished Request
+2024-08-15 14:22:06 INFO 元素对象输入值成功，值为：abcd1234
+2024-08-15 14:22:06 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:22:06 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:22:06 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:22:06 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:22:06 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:06 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"d41c6462-8fbe-4c5e-a144-4a4749b6c348","ELEMENT":"d41c6462-8fbe-4c5e-a144-4a4749b6c348"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-ExGFxkZvVgYYOWCLV0nGN6Vwdyk"', 'Date': 'Thu, 15 Aug 2024 06:22:06 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:06 DEBUG Finished Request
+2024-08-15 14:22:06 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="d41c6462-8fbe-4c5e-a144-4a4749b6c348")>
+2024-08-15 14:22:06 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/d41c6462-8fbe-4c5e-a144-4a4749b6c348/click {"id": "d41c6462-8fbe-4c5e-a144-4a4749b6c348"}
+2024-08-15 14:22:07 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/d41c6462-8fbe-4c5e-a144-4a4749b6c348/click HTTP/1.1" 200 14
+2024-08-15 14:22:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:07 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:07 DEBUG Finished Request
+2024-08-15 14:22:07 INFO 元素对象点击成功
+2024-08-15 14:22:07 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
+2024-08-15 14:22:07 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
+2024-08-15 14:22:07 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
+2024-08-15 14:22:07 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
+2024-08-15 14:22:07 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:07 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"52b4bcf6-a044-464a-ac15-af27dff975de","ELEMENT":"52b4bcf6-a044-464a-ac15-af27dff975de"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-pKziC+Kngk4MlUu1693Pt5vK/gY"', 'Date': 'Thu, 15 Aug 2024 06:22:07 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:07 DEBUG Finished Request
+2024-08-15 14:22:07 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="52b4bcf6-a044-464a-ac15-af27dff975de")>
+2024-08-15 14:22:07 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/52b4bcf6-a044-464a-ac15-af27dff975de/click {"id": "52b4bcf6-a044-464a-ac15-af27dff975de"}
+2024-08-15 14:22:08 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/52b4bcf6-a044-464a-ac15-af27dff975de/click HTTP/1.1" 200 14
+2024-08-15 14:22:08 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:08 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:08 DEBUG Finished Request
+2024-08-15 14:22:08 INFO 元素对象点击成功
+2024-08-15 14:22:08 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:22:08 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:22:08 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:22:08 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:22:08 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:08 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"e5f468d0-ee23-4871-8391-723ff1c69816","ELEMENT":"e5f468d0-ee23-4871-8391-723ff1c69816"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-FFxdNere0hMBdimKdkuX/rbQDEU"', 'Date': 'Thu, 15 Aug 2024 06:22:08 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:08 DEBUG Finished Request
+2024-08-15 14:22:08 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="e5f468d0-ee23-4871-8391-723ff1c69816")>
+2024-08-15 14:22:08 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/e5f468d0-ee23-4871-8391-723ff1c69816/click {"id": "e5f468d0-ee23-4871-8391-723ff1c69816"}
+2024-08-15 14:22:10 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/e5f468d0-ee23-4871-8391-723ff1c69816/click HTTP/1.1" 200 14
+2024-08-15 14:22:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:10 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:10 DEBUG Finished Request
+2024-08-15 14:22:10 INFO 元素对象点击成功
+2024-08-15 14:22:12 INFO 元素名称为：add_devices，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("添加设备")
+2024-08-15 14:22:12 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("添加设备")')
+2024-08-15 14:22:12 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("添加设备")
+2024-08-15 14:22:12 DEBUG POST http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6dfb\u52a0\u8bbe\u5907\")"}
+2024-08-15 14:22:13 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element HTTP/1.1" 200 137
+2024-08-15 14:22:13 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"088d155e-768d-46a8-834a-6ce203d9ed69","ELEMENT":"088d155e-768d-46a8-834a-6ce203d9ed69"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-mEihfRPS4nKELhSH5KDGGcN3ZAY"', 'Date': 'Thu, 15 Aug 2024 06:22:13 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:13 DEBUG Finished Request
+2024-08-15 14:22:13 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="33a7603b-69ee-4fc2-bcf0-75cfd56a1c36", element="088d155e-768d-46a8-834a-6ce203d9ed69")>
+2024-08-15 14:22:13 DEBUG GET http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/088d155e-768d-46a8-834a-6ce203d9ed69/text {"id": "088d155e-768d-46a8-834a-6ce203d9ed69"}
+2024-08-15 14:22:13 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36/element/088d155e-768d-46a8-834a-6ce203d9ed69/text HTTP/1.1" 200 75
+2024-08-15 14:22:13 DEBUG Remote response: status=200 | data={"sessionId":"33a7603b-69ee-4fc2-bcf0-75cfd56a1c36","value":"添加设备"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '75', 'ETag': 'W/"4b-djt1Vhfa0Vmo81l61vxFH+/96Cc"', 'Date': 'Thu, 15 Aug 2024 06:22:13 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:13 DEBUG Finished Request
+2024-08-15 14:22:13 INFO 元素text值：添加设备
+2024-08-15 14:22:13 INFO 正在进行元素断言：断言方式:添加设备是否等于添加设备
+2024-08-15 14:22:13 INFO Closing the Appium session
+2024-08-15 14:22:13 DEBUG DELETE http://127.0.0.1:4723/wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36 {}
+2024-08-15 14:22:14 DEBUG http://127.0.0.1:4723 "DELETE /wd/hub/session/33a7603b-69ee-4fc2-bcf0-75cfd56a1c36 HTTP/1.1" 200 14
+2024-08-15 14:22:14 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:14 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:14 DEBUG Finished Request
+2024-08-15 14:22:14 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'newCommandTimeout': 300}
+2024-08-15 14:22:14 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true, "appium:newCommandTimeout": 300}}}
+2024-08-15 14:22:14 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
+2024-08-15 14:22:21 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 975
+2024-08-15 14:22:21 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"e883d66b-ac0d-46b8-a50b-2d919f457975"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '975', 'ETag': 'W/"3cf-hIgBj+RCzw0huezwT56kkRsRcYA"', 'Date': 'Thu, 15 Aug 2024 06:22:21 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:21 DEBUG Finished Request
+2024-08-15 14:22:21 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
+2024-08-15 14:22:21 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
+2024-08-15 14:22:21 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
+2024-08-15 14:22:21 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:22 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 404 454
+2024-08-15 14:22:22 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:22 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:22 DEBUG Finished Request
+2024-08-15 14:22:23 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:23 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 404 454
+2024-08-15 14:22:23 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:23 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:23 DEBUG Finished Request
+2024-08-15 14:22:23 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:24 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:24 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"bbd549c4-53ef-4213-bae8-b3013bf57797","ELEMENT":"bbd549c4-53ef-4213-bae8-b3013bf57797"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-NLJ+iOZxL6tPQAO5HJgEfq+XVmA"', 'Date': 'Thu, 15 Aug 2024 06:22:24 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:24 DEBUG Finished Request
+2024-08-15 14:22:24 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="bbd549c4-53ef-4213-bae8-b3013bf57797")>
+2024-08-15 14:22:24 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/bbd549c4-53ef-4213-bae8-b3013bf57797/click {"id": "bbd549c4-53ef-4213-bae8-b3013bf57797"}
+2024-08-15 14:22:26 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/bbd549c4-53ef-4213-bae8-b3013bf57797/click HTTP/1.1" 200 14
+2024-08-15 14:22:26 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:26 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:26 DEBUG Finished Request
+2024-08-15 14:22:26 INFO 元素对象点击成功
+2024-08-15 14:22:26 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:26 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
+2024-08-15 14:22:26 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:26 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
+2024-08-15 14:22:26 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:26 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"b46e0151-aa71-4ff9-8539-37829b0fa69d","ELEMENT":"b46e0151-aa71-4ff9-8539-37829b0fa69d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-QQvzfR/SnDc1aYelCmiKQqt6Px4"', 'Date': 'Thu, 15 Aug 2024 06:22:26 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:26 DEBUG Finished Request
+2024-08-15 14:22:26 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="b46e0151-aa71-4ff9-8539-37829b0fa69d")>
+2024-08-15 14:22:26 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/b46e0151-aa71-4ff9-8539-37829b0fa69d/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "b46e0151-aa71-4ff9-8539-37829b0fa69d"}
+2024-08-15 14:22:26 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/b46e0151-aa71-4ff9-8539-37829b0fa69d/value HTTP/1.1" 200 14
+2024-08-15 14:22:26 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:26 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:26 DEBUG Finished Request
+2024-08-15 14:22:26 INFO 元素对象输入值成功，值为：15992213991
+2024-08-15 14:22:26 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:26 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
+2024-08-15 14:22:26 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:26 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
+2024-08-15 14:22:27 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:27 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4f29e19e-0983-45a5-b2db-688792f9d697","ELEMENT":"4f29e19e-0983-45a5-b2db-688792f9d697"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-CoXTlwKvXtbCxaj3Y2PQ/WrrFrM"', 'Date': 'Thu, 15 Aug 2024 06:22:27 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:27 DEBUG Finished Request
+2024-08-15 14:22:27 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="4f29e19e-0983-45a5-b2db-688792f9d697")>
+2024-08-15 14:22:27 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/4f29e19e-0983-45a5-b2db-688792f9d697/value {"text": "abcd12345", "value": ["a", "b", "c", "d", "1", "2", "3", "4", "5"], "id": "4f29e19e-0983-45a5-b2db-688792f9d697"}
+2024-08-15 14:22:27 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/4f29e19e-0983-45a5-b2db-688792f9d697/value HTTP/1.1" 200 14
+2024-08-15 14:22:27 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:27 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:27 DEBUG Finished Request
+2024-08-15 14:22:27 INFO 元素对象输入值成功，值为：abcd12345
+2024-08-15 14:22:27 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:22:27 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:22:27 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:22:27 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:22:28 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:28 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f8f74902-23b4-446d-a2f9-26ab287aa856","ELEMENT":"f8f74902-23b4-446d-a2f9-26ab287aa856"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-l0Al0ZcLlWNQNYRU6zPffr0QvuI"', 'Date': 'Thu, 15 Aug 2024 06:22:28 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:28 DEBUG Finished Request
+2024-08-15 14:22:28 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="f8f74902-23b4-446d-a2f9-26ab287aa856")>
+2024-08-15 14:22:28 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/f8f74902-23b4-446d-a2f9-26ab287aa856/click {"id": "f8f74902-23b4-446d-a2f9-26ab287aa856"}
+2024-08-15 14:22:29 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/f8f74902-23b4-446d-a2f9-26ab287aa856/click HTTP/1.1" 200 14
+2024-08-15 14:22:29 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:29 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:29 DEBUG Finished Request
+2024-08-15 14:22:29 INFO 元素对象点击成功
+2024-08-15 14:22:29 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
+2024-08-15 14:22:29 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
+2024-08-15 14:22:29 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
+2024-08-15 14:22:29 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
+2024-08-15 14:22:29 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:29 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"045280e3-5614-4725-99a3-fe5814dd9ffc","ELEMENT":"045280e3-5614-4725-99a3-fe5814dd9ffc"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-aWYi+kLBbhNRlW06pHqOQ0lR724"', 'Date': 'Thu, 15 Aug 2024 06:22:29 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:29 DEBUG Finished Request
+2024-08-15 14:22:29 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="045280e3-5614-4725-99a3-fe5814dd9ffc")>
+2024-08-15 14:22:29 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/045280e3-5614-4725-99a3-fe5814dd9ffc/click {"id": "045280e3-5614-4725-99a3-fe5814dd9ffc"}
+2024-08-15 14:22:30 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/045280e3-5614-4725-99a3-fe5814dd9ffc/click HTTP/1.1" 200 14
+2024-08-15 14:22:30 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:30 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:30 DEBUG Finished Request
+2024-08-15 14:22:30 INFO 元素对象点击成功
+2024-08-15 14:22:30 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:22:30 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:22:30 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:22:30 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:22:30 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:30 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"675df1cd-69ca-411e-8870-1d0bfc3bba5d","ELEMENT":"675df1cd-69ca-411e-8870-1d0bfc3bba5d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-UudRWo4yT1FfaAOCIE3XBA2dau4"', 'Date': 'Thu, 15 Aug 2024 06:22:30 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:30 DEBUG Finished Request
+2024-08-15 14:22:30 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="675df1cd-69ca-411e-8870-1d0bfc3bba5d")>
+2024-08-15 14:22:30 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/675df1cd-69ca-411e-8870-1d0bfc3bba5d/click {"id": "675df1cd-69ca-411e-8870-1d0bfc3bba5d"}
+2024-08-15 14:22:31 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/675df1cd-69ca-411e-8870-1d0bfc3bba5d/click HTTP/1.1" 200 14
+2024-08-15 14:22:31 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:31 DEBUG Finished Request
+2024-08-15 14:22:31 INFO 元素对象点击成功
+2024-08-15 14:22:31 INFO 元素名称为：get_toash，元素定位方式为：XPATH，元素对象值为：//*[@text= "密码错误"]
+2024-08-15 14:22:31 INFO 输出定位器信息：('xpath', '//*[@text= "密码错误"]')
+2024-08-15 14:22:31 INFO 正在定位元素信息：定位方式->xpath,value值->//*[@text= "密码错误"]
+2024-08-15 14:22:31 DEBUG POST http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element {"using": "xpath", "value": "//*[@text= \"\u5bc6\u7801\u9519\u8bef\"]"}
+2024-08-15 14:22:31 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element HTTP/1.1" 200 137
+2024-08-15 14:22:31 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"70f07996-b831-4abd-824c-5c7fa55fe40e","ELEMENT":"70f07996-b831-4abd-824c-5c7fa55fe40e"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-dMwvToU0GlXhZSBDZHe0MLa3UAQ"', 'Date': 'Thu, 15 Aug 2024 06:22:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:31 DEBUG Finished Request
+2024-08-15 14:22:31 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="e883d66b-ac0d-46b8-a50b-2d919f457975", element="70f07996-b831-4abd-824c-5c7fa55fe40e")>
+2024-08-15 14:22:31 DEBUG GET http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/70f07996-b831-4abd-824c-5c7fa55fe40e/text {"id": "70f07996-b831-4abd-824c-5c7fa55fe40e"}
+2024-08-15 14:22:31 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975/element/70f07996-b831-4abd-824c-5c7fa55fe40e/text HTTP/1.1" 200 75
+2024-08-15 14:22:31 DEBUG Remote response: status=200 | data={"sessionId":"e883d66b-ac0d-46b8-a50b-2d919f457975","value":"密码错误"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '75', 'ETag': 'W/"4b-lpKE5MfveV7P9bJhmAD90w1l8q4"', 'Date': 'Thu, 15 Aug 2024 06:22:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:31 DEBUG Finished Request
+2024-08-15 14:22:31 INFO 元素text值：密码错误
+2024-08-15 14:22:31 INFO 正在进行元素断言：断言方式:密码错误是否等于密码错误
+2024-08-15 14:22:31 INFO Closing the Appium session
+2024-08-15 14:22:31 DEBUG DELETE http://127.0.0.1:4723/wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975 {}
+2024-08-15 14:22:32 DEBUG http://127.0.0.1:4723 "DELETE /wd/hub/session/e883d66b-ac0d-46b8-a50b-2d919f457975 HTTP/1.1" 200 14
+2024-08-15 14:22:32 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:32 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:32 DEBUG Finished Request
+2024-08-15 14:22:32 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'newCommandTimeout': 300}
+2024-08-15 14:22:32 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true, "appium:newCommandTimeout": 300}}}
+2024-08-15 14:22:32 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
+2024-08-15 14:22:40 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 975
+2024-08-15 14:22:40 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"f79ad04f-f462-48f5-8083-8a054c8c0529"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '975', 'ETag': 'W/"3cf-BG69Q3qzLbFqbmvApCSQLo9uPgY"', 'Date': 'Thu, 15 Aug 2024 06:22:40 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:40 DEBUG Finished Request
+2024-08-15 14:22:40 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
+2024-08-15 14:22:40 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
+2024-08-15 14:22:40 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
+2024-08-15 14:22:40 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:40 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 404 454
+2024-08-15 14:22:40 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:40 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:40 DEBUG Finished Request
+2024-08-15 14:22:41 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:41 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 404 454
+2024-08-15 14:22:41 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:22:41 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:41 DEBUG Finished Request
+2024-08-15 14:22:41 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:22:42 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 200 137
+2024-08-15 14:22:42 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f51efef4-163c-4338-9765-e943d7f757d4","ELEMENT":"f51efef4-163c-4338-9765-e943d7f757d4"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-OzdYseAoVuZxf93QQO8OXqgRbV0"', 'Date': 'Thu, 15 Aug 2024 06:22:42 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:42 DEBUG Finished Request
+2024-08-15 14:22:42 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="f79ad04f-f462-48f5-8083-8a054c8c0529", element="f51efef4-163c-4338-9765-e943d7f757d4")>
+2024-08-15 14:22:42 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element/f51efef4-163c-4338-9765-e943d7f757d4/click {"id": "f51efef4-163c-4338-9765-e943d7f757d4"}
+2024-08-15 14:22:44 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element/f51efef4-163c-4338-9765-e943d7f757d4/click HTTP/1.1" 200 14
+2024-08-15 14:22:44 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:22:44 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:44 DEBUG Finished Request
+2024-08-15 14:22:44 INFO 元素对象点击成功
+2024-08-15 14:22:44 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:44 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
+2024-08-15 14:22:44 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
+2024-08-15 14:22:44 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
+2024-08-15 14:22:44 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 200 137
+2024-08-15 14:22:44 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"88924745-1190-4043-8a0f-4662f65a0e3e","ELEMENT":"88924745-1190-4043-8a0f-4662f65a0e3e"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-7zmk85KeK7kER5JN0M8spl5Oon0"', 'Date': 'Thu, 15 Aug 2024 06:22:44 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:44 DEBUG Finished Request
+2024-08-15 14:22:44 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="f79ad04f-f462-48f5-8083-8a054c8c0529", element="88924745-1190-4043-8a0f-4662f65a0e3e")>
+2024-08-15 14:22:44 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element/88924745-1190-4043-8a0f-4662f65a0e3e/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "88924745-1190-4043-8a0f-4662f65a0e3e"}
+2024-08-15 14:22:45 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element/88924745-1190-4043-8a0f-4662f65a0e3e/value HTTP/1.1" 500 597
+2024-08-15 14:22:45 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up\n    at JWProxy.command (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\jsonwp-proxy\\proxy.js:261:13)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '597', 'ETag': 'W/"255-Eb9VUWT+DLErz1YEyqdlA4yw0UA"', 'Date': 'Thu, 15 Aug 2024 06:22:45 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:45 DEBUG Finished Request
+2024-08-15 14:22:45 ERROR 元素对象输入值失败，错误信息为：Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+    at JWProxy.command (C:\Users\Administrator\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:261:13)
+2024-08-15 14:22:45 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:45 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
+2024-08-15 14:22:45 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:22:45 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
+2024-08-15 14:22:47 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 500 639
+2024-08-15 14:22:47 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200\n    at JWProxy.command (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\jsonwp-proxy\\proxy.js:261:13)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '639', 'ETag': 'W/"27f-6GkMv9jntSHCuCHgYW/dkL4ZfRs"', 'Date': 'Thu, 15 Aug 2024 06:22:47 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:47 DEBUG Finished Request
+2024-08-15 14:22:47 ERROR 定位不到元素，错误信息为:Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+    at JWProxy.command (C:\Users\Administrator\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:261:13)
+2024-08-15 14:22:47 ERROR 元素对象输入值失败，错误信息为：'str' object has no attribute 'send_keys'
+2024-08-15 14:22:47 INFO 元素名称为：check_btn，元素定位方式为：XPATH，元素对象值为：/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView 
+2024-08-15 14:22:47 INFO 输出定位器信息：('xpath', '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView ')
+2024-08-15 14:22:47 INFO 正在定位元素信息：定位方式->xpath,value值->/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView 
+2024-08-15 14:22:47 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "xpath", "value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView "}
+2024-08-15 14:22:49 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 500 639
+2024-08-15 14:22:49 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200\n    at JWProxy.command (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\jsonwp-proxy\\proxy.js:261:13)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '639', 'ETag': 'W/"27f-6GkMv9jntSHCuCHgYW/dkL4ZfRs"', 'Date': 'Thu, 15 Aug 2024 06:22:49 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:49 DEBUG Finished Request
+2024-08-15 14:22:49 ERROR 定位不到元素，错误信息为:Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+    at JWProxy.command (C:\Users\Administrator\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:261:13)
+2024-08-15 14:22:49 ERROR 元素对象点击失败，错误信息为：'str' object has no attribute 'click'
+2024-08-15 14:22:51 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:22:51 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:22:51 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:22:51 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:22:53 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 500 639
+2024-08-15 14:22:53 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200\n    at JWProxy.command (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\jsonwp-proxy\\proxy.js:261:13)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '639', 'ETag': 'W/"27f-6GkMv9jntSHCuCHgYW/dkL4ZfRs"', 'Date': 'Thu, 15 Aug 2024 06:22:53 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:53 DEBUG Finished Request
+2024-08-15 14:22:53 ERROR 定位不到元素，错误信息为:Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+    at JWProxy.command (C:\Users\Administrator\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:261:13)
+2024-08-15 14:22:53 ERROR 元素对象点击失败，错误信息为：'str' object has no attribute 'click'
+2024-08-15 14:22:53 INFO 元素名称为：add_devices，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("添加设备")
+2024-08-15 14:22:53 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("添加设备")')
+2024-08-15 14:22:53 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("添加设备")
+2024-08-15 14:22:53 DEBUG POST http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6dfb\u52a0\u8bbe\u5907\")"}
+2024-08-15 14:22:55 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529/element HTTP/1.1" 500 639
+2024-08-15 14:22:55 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200\n    at JWProxy.command (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\jsonwp-proxy\\proxy.js:261:13)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '639', 'ETag': 'W/"27f-6GkMv9jntSHCuCHgYW/dkL4ZfRs"', 'Date': 'Thu, 15 Aug 2024 06:22:55 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:55 DEBUG Finished Request
+2024-08-15 14:22:55 ERROR 定位不到元素，错误信息为:Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: connect ECONNREFUSED 127.0.0.1:8200
+    at JWProxy.command (C:\Users\Administrator\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:261:13)
+2024-08-15 14:22:55 ERROR 元素text获取失败，错误信息为：'str' object has no attribute 'text'
+2024-08-15 14:22:55 INFO Closing the Appium session
+2024-08-15 14:22:55 DEBUG DELETE http://127.0.0.1:4723/wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529 {}
+2024-08-15 14:22:57 DEBUG http://127.0.0.1:4723 "DELETE /wd/hub/session/f79ad04f-f462-48f5-8083-8a054c8c0529 HTTP/1.1" 500 1423
+2024-08-15 14:22:57 DEBUG Remote response: status=500 | data={"value":{"error":"unknown error","message":"An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'D:\\\\BaiduNetdiskDownload\\\\appium环境安装全家桶\\\\appium环境安装全家桶\\\\android-sdk_r24.4.1-windows\\\\android-sdk_r24.4.1-windows\\\\android-sdk-windows\\\\platform-tools\\\\adb.exe -P 5037 -s 4fb5de03 shell settings delete global hidden_api_policy_pre_p_apps' exited with code 1'; Stderr: 'error: device offline'; Code: '1'","stacktrace":"UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'D:\\\\BaiduNetdiskDownload\\\\appium环境安装全家桶\\\\appium环境安装全家桶\\\\android-sdk_r24.4.1-windows\\\\android-sdk_r24.4.1-windows\\\\android-sdk-windows\\\\platform-tools\\\\adb.exe -P 5037 -s 4fb5de03 shell settings delete global hidden_api_policy_pre_p_apps' exited with code 1'; Stderr: 'error: device offline'; Code: '1'\n    at getResponseForW3CError (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\protocol\\errors.js:804:9)\n    at asyncHandler (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-base-driver\\lib\\protocol\\protocol.js:388:37)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1423', 'ETag': 'W/"58f-lWhWlJXiuXyrUftr4mtQ7GRKbGs"', 'Date': 'Thu, 15 Aug 2024 06:22:57 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:22:57 DEBUG Finished Request
+2024-08-15 14:22:57 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'newCommandTimeout': 300}
+2024-08-15 14:22:57 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true, "appium:newCommandTimeout": 300}}}
+2024-08-15 14:22:57 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
+2024-08-15 14:23:09 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 975
+2024-08-15 14:23:09 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"abdf5619-7767-4938-b446-4de4182ae093"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '975', 'ETag': 'W/"3cf-SJuK6lR7HkHqmgMZPgS9apWRdgI"', 'Date': 'Thu, 15 Aug 2024 06:23:09 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:09 DEBUG Finished Request
+2024-08-15 14:23:09 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
+2024-08-15 14:23:09 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
+2024-08-15 14:23:09 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
+2024-08-15 14:23:09 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:09 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 404 454
+2024-08-15 14:23:09 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:23:09 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:09 DEBUG Finished Request
+2024-08-15 14:23:10 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:10 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 404 454
+2024-08-15 14:23:10 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:23:10 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:10 DEBUG Finished Request
+2024-08-15 14:23:10 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:11 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:11 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"8bc0bbeb-ae7b-4258-95ba-d1812d76bdba","ELEMENT":"8bc0bbeb-ae7b-4258-95ba-d1812d76bdba"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-0oefEnAcFEsVy1fHaFrqX1z6AtQ"', 'Date': 'Thu, 15 Aug 2024 06:23:11 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:11 DEBUG Finished Request
+2024-08-15 14:23:11 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="8bc0bbeb-ae7b-4258-95ba-d1812d76bdba")>
+2024-08-15 14:23:11 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/8bc0bbeb-ae7b-4258-95ba-d1812d76bdba/click {"id": "8bc0bbeb-ae7b-4258-95ba-d1812d76bdba"}
+2024-08-15 14:23:13 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/8bc0bbeb-ae7b-4258-95ba-d1812d76bdba/click HTTP/1.1" 200 14
+2024-08-15 14:23:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:13 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:13 DEBUG Finished Request
+2024-08-15 14:23:13 INFO 元素对象点击成功
+2024-08-15 14:23:13 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
+2024-08-15 14:23:13 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
+2024-08-15 14:23:13 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
+2024-08-15 14:23:13 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
+2024-08-15 14:23:13 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:13 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"28d61e6a-b82d-49bc-8046-fb8a91f9575f","ELEMENT":"28d61e6a-b82d-49bc-8046-fb8a91f9575f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-KqEOBy0ku5fB3fHtNjiF6vUzEQ0"', 'Date': 'Thu, 15 Aug 2024 06:23:13 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:13 DEBUG Finished Request
+2024-08-15 14:23:13 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="28d61e6a-b82d-49bc-8046-fb8a91f9575f")>
+2024-08-15 14:23:13 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/28d61e6a-b82d-49bc-8046-fb8a91f9575f/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "28d61e6a-b82d-49bc-8046-fb8a91f9575f"}
+2024-08-15 14:23:13 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/28d61e6a-b82d-49bc-8046-fb8a91f9575f/value HTTP/1.1" 200 14
+2024-08-15 14:23:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:13 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:13 DEBUG Finished Request
+2024-08-15 14:23:13 INFO 元素对象输入值成功，值为：15992213991
+2024-08-15 14:23:13 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:23:13 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
+2024-08-15 14:23:13 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:23:13 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
+2024-08-15 14:23:14 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:14 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e","ELEMENT":"69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-vDVmQ6V5HOPUHL1rcN/WVsamNQc"', 'Date': 'Thu, 15 Aug 2024 06:23:14 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:14 DEBUG Finished Request
+2024-08-15 14:23:14 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e")>
+2024-08-15 14:23:14 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e/value {"text": "abcd1234", "value": ["a", "b", "c", "d", "1", "2", "3", "4"], "id": "69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e"}
+2024-08-15 14:23:15 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/69a1b47c-7fe9-4cfa-ab54-c8e4869ac93e/value HTTP/1.1" 200 14
+2024-08-15 14:23:15 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:15 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:15 DEBUG Finished Request
+2024-08-15 14:23:15 INFO 元素对象输入值成功，值为：abcd1234
+2024-08-15 14:23:15 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:23:15 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:23:15 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:23:15 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:23:15 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:15 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"895b6b09-b249-402e-8e4e-1b9f10518b89","ELEMENT":"895b6b09-b249-402e-8e4e-1b9f10518b89"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-lNfkWKZo2edVKUJPh7lVcFXmd7o"', 'Date': 'Thu, 15 Aug 2024 06:23:15 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:15 DEBUG Finished Request
+2024-08-15 14:23:15 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="895b6b09-b249-402e-8e4e-1b9f10518b89")>
+2024-08-15 14:23:15 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/895b6b09-b249-402e-8e4e-1b9f10518b89/click {"id": "895b6b09-b249-402e-8e4e-1b9f10518b89"}
+2024-08-15 14:23:16 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/895b6b09-b249-402e-8e4e-1b9f10518b89/click HTTP/1.1" 200 14
+2024-08-15 14:23:16 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:16 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:16 DEBUG Finished Request
+2024-08-15 14:23:16 INFO 元素对象点击成功
+2024-08-15 14:23:16 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
+2024-08-15 14:23:16 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
+2024-08-15 14:23:16 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
+2024-08-15 14:23:16 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
+2024-08-15 14:23:16 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:16 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"86f48ed6-8834-4178-a830-11cad46f8f6f","ELEMENT":"86f48ed6-8834-4178-a830-11cad46f8f6f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-EoaHWPY0QQQ+E9q2zIkTZKMjAKg"', 'Date': 'Thu, 15 Aug 2024 06:23:16 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:16 DEBUG Finished Request
+2024-08-15 14:23:16 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="86f48ed6-8834-4178-a830-11cad46f8f6f")>
+2024-08-15 14:23:16 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/86f48ed6-8834-4178-a830-11cad46f8f6f/click {"id": "86f48ed6-8834-4178-a830-11cad46f8f6f"}
+2024-08-15 14:23:18 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/86f48ed6-8834-4178-a830-11cad46f8f6f/click HTTP/1.1" 200 14
+2024-08-15 14:23:18 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:18 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:18 DEBUG Finished Request
+2024-08-15 14:23:18 INFO 元素对象点击成功
+2024-08-15 14:23:18 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:23:18 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:23:18 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:23:18 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:23:18 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:18 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"c3e4bdf0-2c70-4096-a4eb-21124626a18f","ELEMENT":"c3e4bdf0-2c70-4096-a4eb-21124626a18f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-OM4dx0IKaJ6aleTp+h+EP0st7LI"', 'Date': 'Thu, 15 Aug 2024 06:23:18 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:18 DEBUG Finished Request
+2024-08-15 14:23:18 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="c3e4bdf0-2c70-4096-a4eb-21124626a18f")>
+2024-08-15 14:23:18 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/c3e4bdf0-2c70-4096-a4eb-21124626a18f/click {"id": "c3e4bdf0-2c70-4096-a4eb-21124626a18f"}
+2024-08-15 14:23:21 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/c3e4bdf0-2c70-4096-a4eb-21124626a18f/click HTTP/1.1" 200 14
+2024-08-15 14:23:21 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:21 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:21 DEBUG Finished Request
+2024-08-15 14:23:21 INFO 元素对象点击成功
+2024-08-15 14:23:23 INFO 用例编号编码：test_d4
+2024-08-15 14:23:23 INFO 元素名称为：mine_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("我的")
+2024-08-15 14:23:23 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("我的")')
+2024-08-15 14:23:23 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("我的")
+2024-08-15 14:23:23 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6211\u7684\")"}
+2024-08-15 14:23:23 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:23 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"268924b3-3e13-4d11-a104-4b491119c4ab","ELEMENT":"268924b3-3e13-4d11-a104-4b491119c4ab"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-PSr1GTktjtTqNR2tCOaZOSeoYoM"', 'Date': 'Thu, 15 Aug 2024 06:23:23 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:23 DEBUG Finished Request
+2024-08-15 14:23:23 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="268924b3-3e13-4d11-a104-4b491119c4ab")>
+2024-08-15 14:23:23 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/268924b3-3e13-4d11-a104-4b491119c4ab/click {"id": "268924b3-3e13-4d11-a104-4b491119c4ab"}
+2024-08-15 14:23:25 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/268924b3-3e13-4d11-a104-4b491119c4ab/click HTTP/1.1" 200 14
+2024-08-15 14:23:25 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:25 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:25 DEBUG Finished Request
+2024-08-15 14:23:25 INFO 元素对象点击成功
+2024-08-15 14:23:25 INFO 元素名称为：insert_page，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("1")
+2024-08-15 14:23:25 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("1")')
+2024-08-15 14:23:25 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("1")
+2024-08-15 14:23:25 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"1\")"}
+2024-08-15 14:23:25 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:25 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9da96abf-55a0-43d8-8ad1-2c7aa76e152f","ELEMENT":"9da96abf-55a0-43d8-8ad1-2c7aa76e152f"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-n9W06RxoKj72aO5MnI7DL07sbCM"', 'Date': 'Thu, 15 Aug 2024 06:23:25 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:25 DEBUG Finished Request
+2024-08-15 14:23:25 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="9da96abf-55a0-43d8-8ad1-2c7aa76e152f")>
+2024-08-15 14:23:25 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/9da96abf-55a0-43d8-8ad1-2c7aa76e152f/click {"id": "9da96abf-55a0-43d8-8ad1-2c7aa76e152f"}
+2024-08-15 14:23:26 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/9da96abf-55a0-43d8-8ad1-2c7aa76e152f/click HTTP/1.1" 200 14
+2024-08-15 14:23:26 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:26 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:26 DEBUG Finished Request
+2024-08-15 14:23:26 INFO 元素对象点击成功
+2024-08-15 14:23:26 INFO 元素名称为：tuichu_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("退出登录")
+2024-08-15 14:23:26 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("退出登录")')
+2024-08-15 14:23:26 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("退出登录")
+2024-08-15 14:23:26 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u9000\u51fa\u767b\u5f55\")"}
+2024-08-15 14:23:26 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:26 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4bc2dcdf-4551-4f5f-9964-2358703011c7","ELEMENT":"4bc2dcdf-4551-4f5f-9964-2358703011c7"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-TSdWkNZnSMRjm6DSjkLHnoSk+hk"', 'Date': 'Thu, 15 Aug 2024 06:23:26 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:26 DEBUG Finished Request
+2024-08-15 14:23:26 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="4bc2dcdf-4551-4f5f-9964-2358703011c7")>
+2024-08-15 14:23:26 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/4bc2dcdf-4551-4f5f-9964-2358703011c7/click {"id": "4bc2dcdf-4551-4f5f-9964-2358703011c7"}
+2024-08-15 14:23:27 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/4bc2dcdf-4551-4f5f-9964-2358703011c7/click HTTP/1.1" 200 14
+2024-08-15 14:23:27 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:27 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:27 DEBUG Finished Request
+2024-08-15 14:23:27 INFO 元素对象点击成功
+2024-08-15 14:23:27 INFO 元素名称为：sure_tuichu_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("确定")
+2024-08-15 14:23:27 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("确定")')
+2024-08-15 14:23:27 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("确定")
+2024-08-15 14:23:27 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u786e\u5b9a\")"}
+2024-08-15 14:23:27 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:27 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"9d798eed-4895-421b-8a90-5717ad4fa58d","ELEMENT":"9d798eed-4895-421b-8a90-5717ad4fa58d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-8R7V+hmJdMcKbuH3tibo1L6CLMA"', 'Date': 'Thu, 15 Aug 2024 06:23:27 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:27 DEBUG Finished Request
+2024-08-15 14:23:27 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="9d798eed-4895-421b-8a90-5717ad4fa58d")>
+2024-08-15 14:23:27 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/9d798eed-4895-421b-8a90-5717ad4fa58d/click {"id": "9d798eed-4895-421b-8a90-5717ad4fa58d"}
+2024-08-15 14:23:29 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/9d798eed-4895-421b-8a90-5717ad4fa58d/click HTTP/1.1" 200 14
+2024-08-15 14:23:29 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:29 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:29 DEBUG Finished Request
+2024-08-15 14:23:29 INFO 元素对象点击成功
+2024-08-15 14:23:31 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:23:31 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:23:31 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:23:31 DEBUG POST http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:23:31 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element HTTP/1.1" 200 137
+2024-08-15 14:23:31 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"c6516f94-6b38-4e89-9de3-0025dc77178c","ELEMENT":"c6516f94-6b38-4e89-9de3-0025dc77178c"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-Z5fTXjm0Yeh6mW+WI96NvDadqqw"', 'Date': 'Thu, 15 Aug 2024 06:23:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:31 DEBUG Finished Request
+2024-08-15 14:23:31 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="abdf5619-7767-4938-b446-4de4182ae093", element="c6516f94-6b38-4e89-9de3-0025dc77178c")>
+2024-08-15 14:23:31 DEBUG GET http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/c6516f94-6b38-4e89-9de3-0025dc77178c/text {"id": "c6516f94-6b38-4e89-9de3-0025dc77178c"}
+2024-08-15 14:23:31 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093/element/c6516f94-6b38-4e89-9de3-0025dc77178c/text HTTP/1.1" 200 69
+2024-08-15 14:23:31 DEBUG Remote response: status=200 | data={"sessionId":"abdf5619-7767-4938-b446-4de4182ae093","value":"登录"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '69', 'ETag': 'W/"45-M/iFdyzvRhCnVyVCyTzn47esHpU"', 'Date': 'Thu, 15 Aug 2024 06:23:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:31 DEBUG Finished Request
+2024-08-15 14:23:31 INFO 元素text值：登录
+2024-08-15 14:23:31 INFO 正在进行元素断言：断言方式:登录是否等于登录
+2024-08-15 14:23:31 INFO Closing the Appium session
+2024-08-15 14:23:31 DEBUG DELETE http://127.0.0.1:4723/wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093 {}
+2024-08-15 14:23:31 DEBUG http://127.0.0.1:4723 "DELETE /wd/hub/session/abdf5619-7767-4938-b446-4de4182ae093 HTTP/1.1" 200 14
+2024-08-15 14:23:31 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:31 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:31 DEBUG Finished Request
+2024-08-15 14:23:31 INFO Connecting to Appium server at http://127.0.0.1:4723/wd/hub with capabilities {'platformName': 'Android', 'deviceName': '4fb5de03', 'platformVersion': '10', 'appPackage': 'com.ugreen.iot', 'appActivity': 'com.guoxuansource.MainActivity', 'unicodeKeyboard': True, 'resetKeyboard': True, 'newCommandTimeout': 300}
+2024-08-15 14:23:31 DEBUG POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:deviceName": "4fb5de03", "appium:platformVersion": "10", "appium:appPackage": "com.ugreen.iot", "appium:appActivity": "com.guoxuansource.MainActivity", "appium:unicodeKeyboard": true, "appium:resetKeyboard": true, "appium:newCommandTimeout": 300}}}
+2024-08-15 14:23:31 DEBUG Starting new HTTP connection (1): 127.0.0.1:4723
+2024-08-15 14:23:39 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 975
+2024-08-15 14:23:39 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300},"platformName":"Android","deviceName":"4fb5de03","platformVersion":"10","appPackage":"com.ugreen.iot","appActivity":"com.guoxuansource.MainActivity","unicodeKeyboard":true,"resetKeyboard":true,"newCommandTimeout":300,"deviceUDID":"4fb5de03","deviceApiLevel":29,"deviceScreenSize":"1080x2280","deviceScreenDensity":440,"deviceModel":"MI 8 Lite","deviceManufacturer":"Xiaomi","pixelRatio":2.75,"statBarHeight":82,"viewportRect":{"left":0,"top":82,"width":1080,"height":2072}},"sessionId":"04e2718b-ccef-449a-8cf3-31067c512c6a"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '975', 'ETag': 'W/"3cf-N7sYwGg06OVKyooN9rWLD4+mfxA"', 'Date': 'Thu, 15 Aug 2024 06:23:39 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:39 DEBUG Finished Request
+2024-08-15 14:23:39 INFO 元素名称为：login_btn_successs，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意并继续")
+2024-08-15 14:23:39 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意并继续")')
+2024-08-15 14:23:39 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意并继续")
+2024-08-15 14:23:39 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:40 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 404 454
+2024-08-15 14:23:40 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:23:40 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:40 DEBUG Finished Request
+2024-08-15 14:23:40 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:41 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 404 454
+2024-08-15 14:23:41 DEBUG Remote response: status=404 | data={"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"NoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Administrator\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-android-driver\\lib\\commands\\find.js:75:11)"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '454', 'ETag': 'W/"1c6-p3EBXX1QLcePAy2cTez1bDcb9BU"', 'Date': 'Thu, 15 Aug 2024 06:23:41 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:41 DEBUG Finished Request
+2024-08-15 14:23:41 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\u5e76\u7ee7\u7eed\")"}
+2024-08-15 14:23:41 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:41 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4","ELEMENT":"24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-IK7bOrBYNKWleKmidM39i9hKTOg"', 'Date': 'Thu, 15 Aug 2024 06:23:41 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:41 DEBUG Finished Request
+2024-08-15 14:23:41 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4")>
+2024-08-15 14:23:41 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4/click {"id": "24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4"}
+2024-08-15 14:23:43 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/24b82a4d-86a4-42a6-8fa8-2896e4fd7cf4/click HTTP/1.1" 200 14
+2024-08-15 14:23:43 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:43 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:43 DEBUG Finished Request
+2024-08-15 14:23:43 INFO 元素对象点击成功
+2024-08-15 14:23:43 INFO 元素名称为：phone_number，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("请输入手机号码")
+2024-08-15 14:23:43 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("请输入手机号码")')
+2024-08-15 14:23:43 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("请输入手机号码")
+2024-08-15 14:23:43 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801\")"}
+2024-08-15 14:23:43 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:43 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"734de2ef-b3ec-4991-9196-c2788459447a","ELEMENT":"734de2ef-b3ec-4991-9196-c2788459447a"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-4/ZtE2ng9MaV4xkRa6ceYGxcgq0"', 'Date': 'Thu, 15 Aug 2024 06:23:43 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:43 DEBUG Finished Request
+2024-08-15 14:23:43 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="734de2ef-b3ec-4991-9196-c2788459447a")>
+2024-08-15 14:23:43 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/734de2ef-b3ec-4991-9196-c2788459447a/value {"text": "15992213991", "value": ["1", "5", "9", "9", "2", "2", "1", "3", "9", "9", "1"], "id": "734de2ef-b3ec-4991-9196-c2788459447a"}
+2024-08-15 14:23:44 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/734de2ef-b3ec-4991-9196-c2788459447a/value HTTP/1.1" 200 14
+2024-08-15 14:23:44 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:44 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:44 DEBUG Finished Request
+2024-08-15 14:23:44 INFO 元素对象输入值成功，值为：15992213991
+2024-08-15 14:23:44 INFO 元素名称为：phone_passage，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:23:44 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("^请输入登.*")')
+2024-08-15 14:23:44 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("^请输入登.*")
+2024-08-15 14:23:44 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"^\u8bf7\u8f93\u5165\u767b.*\")"}
+2024-08-15 14:23:45 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:45 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"a3c375e6-0ced-4137-b2c8-8bfe91e93cae","ELEMENT":"a3c375e6-0ced-4137-b2c8-8bfe91e93cae"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-7tQCyZTKnUKzvuYkh1q2fqXZQjY"', 'Date': 'Thu, 15 Aug 2024 06:23:45 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:45 DEBUG Finished Request
+2024-08-15 14:23:45 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="a3c375e6-0ced-4137-b2c8-8bfe91e93cae")>
+2024-08-15 14:23:45 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/a3c375e6-0ced-4137-b2c8-8bfe91e93cae/value {"text": "abcd1234", "value": ["a", "b", "c", "d", "1", "2", "3", "4"], "id": "a3c375e6-0ced-4137-b2c8-8bfe91e93cae"}
+2024-08-15 14:23:46 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/a3c375e6-0ced-4137-b2c8-8bfe91e93cae/value HTTP/1.1" 200 14
+2024-08-15 14:23:46 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:46 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:46 DEBUG Finished Request
+2024-08-15 14:23:46 INFO 元素对象输入值成功，值为：abcd1234
+2024-08-15 14:23:46 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:23:46 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:23:46 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:23:46 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:23:46 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:46 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"a33ab075-ee9c-40ee-8c7e-64627f2b5a38","ELEMENT":"a33ab075-ee9c-40ee-8c7e-64627f2b5a38"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-0kO5eVfi3+sCDfQJCcuk+UtayLY"', 'Date': 'Thu, 15 Aug 2024 06:23:46 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:46 DEBUG Finished Request
+2024-08-15 14:23:46 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="a33ab075-ee9c-40ee-8c7e-64627f2b5a38")>
+2024-08-15 14:23:46 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/a33ab075-ee9c-40ee-8c7e-64627f2b5a38/click {"id": "a33ab075-ee9c-40ee-8c7e-64627f2b5a38"}
+2024-08-15 14:23:47 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/a33ab075-ee9c-40ee-8c7e-64627f2b5a38/click HTTP/1.1" 200 14
+2024-08-15 14:23:47 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:47 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:47 DEBUG Finished Request
+2024-08-15 14:23:47 INFO 元素对象点击成功
+2024-08-15 14:23:47 INFO 元素名称为：checkbox_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("同意")
+2024-08-15 14:23:47 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("同意")')
+2024-08-15 14:23:47 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("同意")
+2024-08-15 14:23:47 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u540c\u610f\")"}
+2024-08-15 14:23:47 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:47 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"45b39139-b86e-41f9-9ce3-509e60c44aed","ELEMENT":"45b39139-b86e-41f9-9ce3-509e60c44aed"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-8rXe+A1Gk1NV4PDUhZmv+FgpCU0"', 'Date': 'Thu, 15 Aug 2024 06:23:47 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:47 DEBUG Finished Request
+2024-08-15 14:23:47 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="45b39139-b86e-41f9-9ce3-509e60c44aed")>
+2024-08-15 14:23:47 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/45b39139-b86e-41f9-9ce3-509e60c44aed/click {"id": "45b39139-b86e-41f9-9ce3-509e60c44aed"}
+2024-08-15 14:23:48 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/45b39139-b86e-41f9-9ce3-509e60c44aed/click HTTP/1.1" 200 14
+2024-08-15 14:23:48 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:48 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:48 DEBUG Finished Request
+2024-08-15 14:23:48 INFO 元素对象点击成功
+2024-08-15 14:23:48 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:23:48 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:23:48 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:23:48 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:23:48 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:48 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"92cff144-f815-4559-8b7b-2a9af6910641","ELEMENT":"92cff144-f815-4559-8b7b-2a9af6910641"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-9T7YBGdDS2GqGMR8Pm0IB4HQNvo"', 'Date': 'Thu, 15 Aug 2024 06:23:48 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:48 DEBUG Finished Request
+2024-08-15 14:23:48 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="92cff144-f815-4559-8b7b-2a9af6910641")>
+2024-08-15 14:23:48 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/92cff144-f815-4559-8b7b-2a9af6910641/click {"id": "92cff144-f815-4559-8b7b-2a9af6910641"}
+2024-08-15 14:23:51 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/92cff144-f815-4559-8b7b-2a9af6910641/click HTTP/1.1" 200 14
+2024-08-15 14:23:51 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:51 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:51 DEBUG Finished Request
+2024-08-15 14:23:51 INFO 元素对象点击成功
+2024-08-15 14:23:53 INFO 用例编号编码：test_d5
+2024-08-15 14:23:55 INFO 元素名称为：mine_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("我的")
+2024-08-15 14:23:55 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("我的")')
+2024-08-15 14:23:55 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("我的")
+2024-08-15 14:23:55 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u6211\u7684\")"}
+2024-08-15 14:23:55 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:55 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"420945bc-d656-40cc-8feb-27993a059616","ELEMENT":"420945bc-d656-40cc-8feb-27993a059616"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-z5P17Z+tXYNgLsTZYb33aVEno00"', 'Date': 'Thu, 15 Aug 2024 06:23:55 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:55 DEBUG Finished Request
+2024-08-15 14:23:55 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="420945bc-d656-40cc-8feb-27993a059616")>
+2024-08-15 14:23:55 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/420945bc-d656-40cc-8feb-27993a059616/click {"id": "420945bc-d656-40cc-8feb-27993a059616"}
+2024-08-15 14:23:56 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/420945bc-d656-40cc-8feb-27993a059616/click HTTP/1.1" 200 14
+2024-08-15 14:23:56 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:56 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:56 DEBUG Finished Request
+2024-08-15 14:23:56 INFO 元素对象点击成功
+2024-08-15 14:23:56 INFO 元素名称为：personal_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("个人信息保护")
+2024-08-15 14:23:56 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("个人信息保护")')
+2024-08-15 14:23:56 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("个人信息保护")
+2024-08-15 14:23:56 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u4e2a\u4eba\u4fe1\u606f\u4fdd\u62a4\")"}
+2024-08-15 14:23:56 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:56 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f353a234-8df0-4c2e-9d37-3a36e5c25e9e","ELEMENT":"f353a234-8df0-4c2e-9d37-3a36e5c25e9e"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-k6AlFNwKD/1y9VMMmmpPqVaAvW4"', 'Date': 'Thu, 15 Aug 2024 06:23:56 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:56 DEBUG Finished Request
+2024-08-15 14:23:56 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="f353a234-8df0-4c2e-9d37-3a36e5c25e9e")>
+2024-08-15 14:23:56 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/f353a234-8df0-4c2e-9d37-3a36e5c25e9e/click {"id": "f353a234-8df0-4c2e-9d37-3a36e5c25e9e"}
+2024-08-15 14:23:58 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/f353a234-8df0-4c2e-9d37-3a36e5c25e9e/click HTTP/1.1" 200 14
+2024-08-15 14:23:58 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:58 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:58 DEBUG Finished Request
+2024-08-15 14:23:58 INFO 元素对象点击成功
+2024-08-15 14:23:58 INFO 元素名称为：reset_agree，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("撤回同意")
+2024-08-15 14:23:58 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("撤回同意")')
+2024-08-15 14:23:58 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("撤回同意")
+2024-08-15 14:23:58 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u64a4\u56de\u540c\u610f\")"}
+2024-08-15 14:23:58 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:58 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2db7ddb2-c067-415e-9a3c-81e871482b53","ELEMENT":"2db7ddb2-c067-415e-9a3c-81e871482b53"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-orM+bxra6hKm4ebIfIduRInw64Q"', 'Date': 'Thu, 15 Aug 2024 06:23:58 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:58 DEBUG Finished Request
+2024-08-15 14:23:58 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="2db7ddb2-c067-415e-9a3c-81e871482b53")>
+2024-08-15 14:23:58 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/2db7ddb2-c067-415e-9a3c-81e871482b53/click {"id": "2db7ddb2-c067-415e-9a3c-81e871482b53"}
+2024-08-15 14:23:59 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/2db7ddb2-c067-415e-9a3c-81e871482b53/click HTTP/1.1" 200 14
+2024-08-15 14:23:59 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:23:59 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:59 DEBUG Finished Request
+2024-08-15 14:23:59 INFO 元素对象点击成功
+2024-08-15 14:23:59 INFO 元素名称为：reset_agree_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().text("确认")
+2024-08-15 14:23:59 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().text("确认")')
+2024-08-15 14:23:59 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().text("确认")
+2024-08-15 14:23:59 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().text(\"\u786e\u8ba4\")"}
+2024-08-15 14:23:59 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:23:59 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3f89a02e-80cd-4fa6-9353-ad0f3744316b","ELEMENT":"3f89a02e-80cd-4fa6-9353-ad0f3744316b"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-AbV43B7+ObKYrXrFV7w9DeexwbU"', 'Date': 'Thu, 15 Aug 2024 06:23:59 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:23:59 DEBUG Finished Request
+2024-08-15 14:23:59 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="3f89a02e-80cd-4fa6-9353-ad0f3744316b")>
+2024-08-15 14:23:59 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/3f89a02e-80cd-4fa6-9353-ad0f3744316b/click {"id": "3f89a02e-80cd-4fa6-9353-ad0f3744316b"}
+2024-08-15 14:24:00 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/3f89a02e-80cd-4fa6-9353-ad0f3744316b/click HTTP/1.1" 200 14
+2024-08-15 14:24:00 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:24:00 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:24:00 DEBUG Finished Request
+2024-08-15 14:24:00 INFO 元素对象点击成功
+2024-08-15 14:24:02 INFO 元素名称为：login_btn，元素定位方式为：ANDROID_UIAUTOMATOR，元素对象值为：new UiSelector().textMatches("登录")
+2024-08-15 14:24:02 INFO 输出定位器信息：('-android uiautomator', 'new UiSelector().textMatches("登录")')
+2024-08-15 14:24:02 INFO 正在定位元素信息：定位方式->-android uiautomator,value值->new UiSelector().textMatches("登录")
+2024-08-15 14:24:02 DEBUG POST http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element {"using": "-android uiautomator", "value": "new UiSelector().textMatches(\"\u767b\u5f55\")"}
+2024-08-15 14:24:02 DEBUG http://127.0.0.1:4723 "POST /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element HTTP/1.1" 200 137
+2024-08-15 14:24:02 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"1ae3a6a1-a968-4abf-89a7-684f9bdb6a39","ELEMENT":"1ae3a6a1-a968-4abf-89a7-684f9bdb6a39"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '137', 'ETag': 'W/"89-FKWNrPmsqhQYB2VRx7k1RSs9tRg"', 'Date': 'Thu, 15 Aug 2024 06:24:02 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:24:02 DEBUG Finished Request
+2024-08-15 14:24:02 INFO 元素对象为：<appium.webdriver.webelement.WebElement (session="04e2718b-ccef-449a-8cf3-31067c512c6a", element="1ae3a6a1-a968-4abf-89a7-684f9bdb6a39")>
+2024-08-15 14:24:02 DEBUG GET http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/1ae3a6a1-a968-4abf-89a7-684f9bdb6a39/text {"id": "1ae3a6a1-a968-4abf-89a7-684f9bdb6a39"}
+2024-08-15 14:24:02 DEBUG http://127.0.0.1:4723 "GET /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a/element/1ae3a6a1-a968-4abf-89a7-684f9bdb6a39/text HTTP/1.1" 200 69
+2024-08-15 14:24:02 DEBUG Remote response: status=200 | data={"sessionId":"04e2718b-ccef-449a-8cf3-31067c512c6a","value":"登录"} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '69', 'ETag': 'W/"45-qSJbIV9PAZ9L6aHODJ1UwnghB7I"', 'Date': 'Thu, 15 Aug 2024 06:24:02 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:24:02 DEBUG Finished Request
+2024-08-15 14:24:02 INFO 元素text值：登录
+2024-08-15 14:24:02 INFO 正在进行元素断言：断言方式:登录是否等于登录
+2024-08-15 14:24:02 INFO Closing the Appium session
+2024-08-15 14:24:02 DEBUG DELETE http://127.0.0.1:4723/wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a {}
+2024-08-15 14:24:03 DEBUG http://127.0.0.1:4723 "DELETE /wd/hub/session/04e2718b-ccef-449a-8cf3-31067c512c6a HTTP/1.1" 200 14
+2024-08-15 14:24:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Thu, 15 Aug 2024 06:24:03 GMT', 'Connection': 'keep-alive'})
+2024-08-15 14:24:03 DEBUG Finished Request

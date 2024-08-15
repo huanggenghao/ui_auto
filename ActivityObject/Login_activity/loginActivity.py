@@ -42,4 +42,16 @@ class LoginActivity(Base):
         return super().get_text(elem)
 
 
+    def get_passage_error_toash(self):
+        elem = self.elem_locator.get_locator("get_toash")
+        return super().get_text(elem)
+
+
+    def check_btn(self):
+        elem = self.elem_locator.get_locator("check_btn")
+        super().click_btn(elem)
+
+
+
+
 

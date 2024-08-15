@@ -5,6 +5,8 @@
 # @File    : conftest.py
 # @Software: PyCharm
 import os
+import time
+
 import pytest
 import logging
 from appium import webdriver
@@ -41,7 +43,7 @@ def function_driver(request):
         'appActivity': appium_config['appActivity'],
         'unicodeKeyboard': appium_config['unicodeKeyboard'],
         'resetKeyboard': appium_config['resetKeyboard'],
-        # 'newCommandTimeout': 60  # 添加超时设置
+        'newCommandTimeout': 300  # 添加超时设置
     }
     try:
         logging.info(f"Connecting to Appium server at {appium_config['remote_URL']} with capabilities {desired_caps}")
@@ -52,6 +54,10 @@ def function_driver(request):
         logging.error(f"Failed to create WebDriver instance: {e}")
         raise
     yield driver
+
+    # 测试用例执行完毕后关闭会话
+    logging.info("Closing the Appium session")
+    driver.quit()
 
 
 @pytest.fixture(scope="function")
@@ -65,8 +71,12 @@ def login_activity_class_load(function_driver):
     login_activity.click_login_btn()
     login_activity.click_chenkbox_btn()  # 勾选复选框
     login_activity.click_login_btn()     # 点击登录按钮
+    time.sleep(2)
 
     yield login_activity
+
+
+
 
 if __name__ == '__main__':
     print(appium_config["remote_URL"])
