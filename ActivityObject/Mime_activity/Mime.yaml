@@ -12,7 +12,7 @@ parameters:
     desc: "进入我的界面箭头"
     data: {
       method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("1111")'
+      value: 'new UiSelector().textContains("1111")'
     }
 
   - elem_name: "tuichu_btn"
@@ -119,14 +119,7 @@ parameters:
 
 
   - elem_name: "sure_english"
-    desc: "select language"
-    data: {
-      method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("Select language")'
-    }
-
-  - elem_name: "sure_english"
-    desc: "select language"
+    desc: "获取文本"
     data: {
       method: "ANDROID_UIAUTOMATOR",
       value: 'new UiSelector().text("Select language")'
@@ -144,6 +137,13 @@ parameters:
     data: {
       method: "XPATH",
       value: '//*[@text= "昵称需在2-30个字符内"]'
+    }
+
+  - elem_name: "personal_name"
+    desc: "进入我的界面箭头"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("111111111111111111111111111111")'
     }
 
 

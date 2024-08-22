@@ -186,7 +186,7 @@ class MimeActivity(Base):
                 # 尝试查找元素
                 try:
                     found_element = self.driver.find_element(*elem)
-                    # 如果找到元素，点击它
+                    # 如果找到元素，获取文本
                     if found_element:
                         return super().get_text(elem)
                     else:
@@ -271,15 +271,41 @@ class MimeActivity(Base):
             screenshout_url = PubMethod.screen_picture(self.driver)
 
 
-
-    # def get_toash1(self):
-    #     elem = self.elem_locator.get_locator("get_toash")
-    #     return super().get_text(elem)
-
     def get_toash1(self):
         try:
             # 获取元素的定位器
             elem = self.elem_locator.get_locator("get_toash")
+
+            if elem:
+                # 尝试查找元素
+                try:
+                    found_element = self.driver.find_element(*elem)
+                    # 如果找到元素，获取文本
+                    if found_element:
+                        return super().get_text(elem)
+                    else:
+                        logging.error("未找到指定元素: {}".format(elem))
+                        # 元素不存在时进行截图
+                        screenshout_url = PubMethod.screen_picture(self.driver)
+                except NoSuchElementException:
+                    logging.error("NoSuchElementException: 无法找到元素: {}".format(elem))
+                    # 元素不存在时进行截图
+                    screenshout_url = PubMethod.screen_picture(self.driver)
+            else:
+                logging.error("获取元素定位器失败: {}".format(elem))
+                # 定位器不存在时进行截图
+                screenshout_url = PubMethod.screen_picture(self.driver)
+
+        except Exception as e:
+            logging.error(f"点击元素时出现未知错误: {str(e)}")
+            # 捕获其他未知异常并进行截图
+            screenshout_url = PubMethod.screen_picture(self.driver)
+
+
+    def personal_name(self):
+        try:
+            # 获取元素的定位器
+            elem = self.elem_locator.get_locator("personal_name")
 
             if elem:
                 # 尝试查找元素

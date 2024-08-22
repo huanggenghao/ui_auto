@@ -87,8 +87,16 @@ class MimeActivityElem(ElemParams):
         super(MimeActivityElem, self).__init__('Mime_activity', 'Mime.yaml')
 
 
+# 注册Home_activity.yaml文件对象
+class HomeActivityElem(ElemParams):
+    def __init__(self):
+        super(HomeActivityElem, self).__init__('Home_activity', 'Home_activity.yaml')
+
+
 if __name__ == '__main__':
     login_activity = LoginActivityElem()
     print(login_activity.get_locator("phone_number"))
     mimeactivity = MimeActivityElem()
     print(mimeactivity.get_locator("mine_btn"))
+    homeactivity = HomeActivityElem()
+    print(homeactivity.get_locator("mine_btn"))
