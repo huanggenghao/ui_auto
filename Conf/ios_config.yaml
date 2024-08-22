@@ -1,0 +1,11 @@
+appium_config:
+  # 配置appium启动参数
+  appium_start_cmd: "appium"
+  automationName: 'XCUITest'
+  remote_URL: "http://127.0.0.1:4723/wd/hub"
+  platformName: "iOS"
+  deviceName: "iPhone 11"
+  platformVersion: "14.4"
+  app: "/path/to/your/app.app"  # iOS应用路径
+  unicodeKeyboard: True
+  resetKeyboard: True

@@ -12,7 +12,6 @@ import yaml
 import os
 import time
 import logging
-# import docker
 import allure
 from Common.fileOption import File_option
 

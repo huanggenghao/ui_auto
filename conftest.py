@@ -9,13 +9,15 @@ import time
 
 import pytest
 import logging
+
+import yaml
 from appium import webdriver
 
 from ActivityObject.Login_activity.loginActivity import LoginActivity
 from Common.publicMethod import PubMethod
 
-appium_config_path = os.path.join(os.path.dirname(__file__), "Conf", "appium_config.yaml")
-appium_config = PubMethod.read_yaml(appium_config_path)["appium_config"]
+# appium_config_path = os.path.join(os.path.dirname(__file__), "Conf", "appium_config.yaml")
+# appium_config = PubMethod.read_yaml(appium_config_path)["appium_config"]
 
 
 
@@ -33,18 +35,49 @@ def pytest_addoption(parser):
     parser.addoption("--mobile_system", action="store", default="android", help="choose system version, android or ios")
 
 
+def get_config_path(mobile_system):
+    # 根据系统类型返回配置文件路径
+    if mobile_system == "android":
+        return os.path.join(os.path.dirname(__file__), "Conf", "appium_config.yaml")
+    elif mobile_system == "ios":
+        return os.path.join(os.path.dirname(__file__), "Conf", "ios_config.yaml")
+    else:
+        raise ValueError("Unsupported mobile system")
+
+
 @pytest.fixture(scope="function")
 def function_driver(request):
+    # 从 pytest 配置中获取 mobile_system 参数
+    mobile_system = request.config.getoption("--mobile_system")
+
+    # 获取配置文件路径
+    appium_config_path = get_config_path(mobile_system)
+
+    # 读取配置文件
+    appium_config = PubMethod.read_yaml(appium_config_path)["appium_config"]
+
     desired_caps = {
         'platformName': appium_config['platformName'],
         'deviceName': appium_config['deviceName'],
         'platformVersion': appium_config['platformVersion'],
-        'appPackage': appium_config['appPackage'],
-        'appActivity': appium_config['appActivity'],
+        # 'appPackage': appium_config['appPackage'],
+        # 'appActivity': appium_config['appActivity'],
+        # 'app': appium_config.get('app', None),  # iOS 特有
         'unicodeKeyboard': appium_config['unicodeKeyboard'],
         'resetKeyboard': appium_config['resetKeyboard'],
         'newCommandTimeout': 300  # 添加超时设置
     }
+    # 根据平台类型添加特定的配置
+    if mobile_system == "android":
+        desired_caps.update({
+            'appPackage': appium_config.get('appPackage'),
+            'appActivity': appium_config.get('appActivity')
+        })
+    elif mobile_system == "ios":
+        desired_caps.update({
+            'app': appium_config.get('app')
+        })
+
     try:
         logging.info(f"Connecting to Appium server at {appium_config['remote_URL']} with capabilities {desired_caps}")
         driver = webdriver.Remote(
@@ -78,6 +111,4 @@ def login_activity_class_load(function_driver):
 
 
 
-if __name__ == '__main__':
-    print(appium_config["remote_URL"])
 

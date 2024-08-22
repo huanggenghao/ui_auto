@@ -12,7 +12,7 @@ parameters:
     desc: "进入我的界面箭头"
     data: {
       method: "ANDROID_UIAUTOMATOR",
-      value: 'new UiSelector().text("1")'
+      value: 'new UiSelector().text("1111")'
     }
 
   - elem_name: "tuichu_btn"
@@ -100,4 +100,50 @@ parameters:
       method: "XPATH",
       value: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup'
     }
+
+
+
+  - elem_name: "language_select"
+    desc: "语言设置"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("语言设置")'
+    }
+
+  - elem_name: "language_english"
+    desc: "英语"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("英语")'
+    }
+
+
+  - elem_name: "sure_english"
+    desc: "select language"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("Select language")'
+    }
+
+  - elem_name: "sure_english"
+    desc: "select language"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("Select language")'
+    }
+
+  - elem_name: "input_kuang"
+    desc: "定位到文本输入框"
+    data: {
+      method: "ANDROID_UIAUTOMATOR",
+      value: 'new UiSelector().text("")'
+    }
+
+  - elem_name: "get_toash"
+    desc: "获取toash消息"
+    data: {
+      method: "XPATH",
+      value: '//*[@text= "昵称需在2-30个字符内"]'
+    }
+
 

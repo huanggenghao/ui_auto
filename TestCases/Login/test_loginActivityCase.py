@@ -14,7 +14,6 @@ import logging
 from Base.assertMethod import AssertMethod
 
 
-
 @allure.feature("TestLoginPageCase")
 class TestLoginPageCase:
 

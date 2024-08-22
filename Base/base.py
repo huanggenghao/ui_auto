@@ -150,6 +150,7 @@ class Base:
         @param locator:定位器
         @return:元素文本值
         """
+        elem_text = None  # 预先初始化变量
         elem = self.find_element(locator)
         try:
             elem_text = elem.text
@@ -215,6 +216,24 @@ class Base:
             logging.error("该元素对象获取状态失败，错误信息为：{}".format(e))
             return False  # 发生错误时默认返回False
         return is_checked
+
+    def clear_text_field(self, locator):
+        """
+        清除文本框内容。
+
+        @param locator: 定位器
+        @return: 返回True表示清除成功，False表示清除失败
+        """
+        try:
+            # 查找元素
+            elem = self.find_element(locator)
+            # 清除文本框内容
+            elem.clear()
+            logging.info("成功清除文本框内容。")
+            return True
+        except Exception as e:
+            logging.error("清除文本框内容失败，错误信息为：{}".format(e))
+            return False  # 发生错误时默认返回False
 
 
 if __name__ == "__main__":
